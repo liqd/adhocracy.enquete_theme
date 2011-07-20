@@ -18,8 +18,8 @@
         <!-- Head: base tag -->                                            
         <replace theme="/html/head/base" content="/html/head/base" />      
         <!-- Head: styles and scripts-->                                               
-        <drop theme="/html/head/style | /html/head/link" if-content="/html/head/style"/> 
-        <append theme="/html/head" content="/html/head/link | /html/head/style" /> 
+        <drop theme="/html/head/link[not(contains(@href, 'base_custom.css'))]" if-content="/html/head/link"/> 
+        <before theme="/html/head/link[1]" content="/html/head/link" /> 
         <drop theme="/html/head/script" if-content="/html/head/script"/>  
         <append theme="/html/head" content="/html/head/script" /> 
 
@@ -32,7 +32,9 @@
         <drop css:theme-children="#sidebar" />
 
         <!--Footer -->
-        <replace css:theme="#links" css:content="#links" css:if-content="#links" />
+        <!--The footer should be static and not wordpress content. Rember if wordpress is not there diazo cannot -->
+        <!--render this page at all.-->
+        <!--<replace css:theme="#links" css:content="#links" css:if-content="#links" />-->
 
     </rules>   
   
@@ -60,13 +62,14 @@
             <xsl:variable name="url_startpage" select="concat('http://', $wordpress_backend_startseite)"/>
             <xsl:copy-of select="document($url_startpage)//*[contains(@class, 'entry-content')]/*"/>
         </replace>
+        <!--Timeline Milestones-->
+        <after css:theme-children="#mainbar-dummy" css:content="#content script"/> 
+        <after css:theme-children="#mainbar-dummy" css:content="#timeline"/> 
         <!--Workaround to handle bad wordpress html-->
         <after css:theme-children="#mainbar-dummy" > 
             <p><xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text></p>
-            <p><xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text></p>
-            <p><xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text></p>
-            <p><xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text></p>
         </after>
+        <!--Global statistic-->
         <after css:theme-children="#mainbar-dummy" css:content-children="#globalstats" /> 
         <after css:theme-children="#mainbar-dummy" > 
             <p><xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text></p>
