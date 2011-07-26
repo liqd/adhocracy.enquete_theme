@@ -2,3 +2,49 @@
   margin-left: 0 !important;
   width: 100% !important;
 }
+
+h1, h2, h3, h4, h5, h6, h3.ui-accordion-header {
+    font-family: Georgia, Times New Roman, Times, serif;
+    font-weight: normal;
+}
+
+body {
+    background-image: url(/static_theme/index_files/body_bg.jpg);
+}
+
+#instanceheader #menu-links ul li:first a {
+    background-image: url(http://www.bundestag.de/internetenquete/includes/images/hauptnavigation_liste_icon_first.gif);
+}
+
+#instanceheader #menu-links ul li:first a:hover {
+    background-image: url(http://www.bundestag.de/internetenquete/includes/images/hauptnavigation_liste_icon_first_aktiv.gif);
+}
+
+#banner {
+    background-image: url(/static_theme/index_files/logo_enquete.png);
+}
+
+#instanceheader .headerbox a.area_shown,
+#instanceheader .headerbox a.active,
+#instanceheader .headerbox.instance a.instance,
+#instanceheader .headerbox.proposal a.proposal,
+#instanceheader .headerbox.selection a.proposal,
+#instanceheader .headerbox.static a.instance,
+#instanceheader .headerbox.page a.page,
+#instanceheader .headerbox.page a.page,
+#instanceheader .headerbox.user a.user {
+    background-image: url(/static_theme/index_files/hauptnavigation_liste_icon_aktiv.gif);
+}
+
+#instanceheader #menu ul li a,
+#instanceheader #search {
+    background: #fff url(/static_theme/index_files/hauptnavigation_liste_icon.gif) bottom left no-repeat;
+}
+
+#instanceheader #menu-links ul li a:hover {
+    background-image: url(/static_theme/index_files/hauptnavigation_liste_icon_aktiv.gif);
+}
+
+.content {
+    background: url(/static_theme/index_files/white-50.png);
+}
