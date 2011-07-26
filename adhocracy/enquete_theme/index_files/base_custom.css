@@ -33,7 +33,7 @@ body {
 #instanceheader .headerbox.page a.page,
 #instanceheader .headerbox.page a.page,
 #instanceheader .headerbox.user a.user {
-    background-image: url(/static_theme/index_files/hauptnavigation_liste_icon_aktiv.gif);
+    background: #fff url(/static_theme/index_files/hauptnavigation_liste_icon_aktiv.gif) bottom left no-repeat !important;
 }
 
 #instanceheader #menu ul li a,
@@ -42,7 +42,7 @@ body {
 }
 
 #instanceheader #menu-links ul li a:hover {
-    background-image: url(/static_theme/index_files/hauptnavigation_liste_icon_aktiv.gif);
+    background: #fff url(/static_theme/index_files/hauptnavigation_liste_icon_aktiv.gif) bottom left no-repeat;
 }
 
 .content {
