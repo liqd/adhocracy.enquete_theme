@@ -18,8 +18,8 @@
         <!-- Head: base tag -->                                            
         <replace theme="/html/head/base" content="/html/head/base" />      
         <!-- Head: styles and scripts-->                                               
-        <drop theme="/html/head/link[not(contains(@href, 'base_custom.css'))]" if-content="/html/head/link"/> 
-        <before theme="/html/head/link[1]" content="/html/head/link" /> 
+        <drop theme="/html/head/link[not(contains(@href, 'base_custom.css'))]" if-content="/html/head/link"/>
+        <before theme="/html/head/link[1]" content="/html/head/link" />
         <drop theme="/html/head/script" if-content="/html/head/script"/>  
         <append theme="/html/head" content="/html/head/script" /> 
 
@@ -40,10 +40,10 @@
   
     <!--Content body and sidebar: default-->
     <rules if-content="not(//*[@class='content-startpage']) and not(contains($path, '_pages'))">
-        <after css:theme="#globalheader" css:content=".no-member" /> 
         <after css:theme="#globalheader" css:content="#instanceheader" /> 
+        <after css:theme="#globalheader" css:content="#instance_infobox_wrapper" /> 
         <replace css:theme="#breadcrumbs" css:content="#breadcrumbs" /> 
-        <after css:theme="#breadcrumbs" css:content=".flash_messages" /> 
+        <after css:theme="#breadcrumbs" css:content="#flash_messages_wrapper" /> 
    
         <replace css:theme="#content" css:content=".content" />
     </rules>
