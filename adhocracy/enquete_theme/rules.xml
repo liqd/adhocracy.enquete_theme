@@ -1,109 +1,60 @@
 <rules
-    xmlns="http://namespaces.plone.org/diazo"
-    xmlns:css="http://namespaces.plone.org/diazo/css"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  xmlns="http://namespaces.plone.org/diazo"
+  xmlns:css="http://namespaces.plone.org/diazo/css"
+  xmlns:xi="http://www.w3.org/2001/XInclude"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-    <theme href="index.html" />
+  <theme href="index.html" />
 
-    <!--Don't theme instance pages-->
-    <!--<notheme if-path="/instance | /milestone | /user | /event | /proposal | /page | /static  | /style | /login | /register" />-->
-    <!--Don't theme wordpress admin-->
-    <notheme if-path="/_pages/wp-admin" />
-      
-    <!--Header and Footer-->
-    <rules css:if-content="#frame">
+  <!--do not theme ajax requests-->
+  <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_notheme.xml" />
 
-        <!-- Head: title -->                                               
-        <replace theme="/html/head/title" content="/html/head/title" />    
-        <!-- Head: base tag -->                                            
-        <replace theme="/html/head/base" content="/html/head/base" />      
-        <!-- Head: styles and scripts-->                                               
-        <drop theme="/html/head/link[not(contains(@href, 'base_custom.css')) and contains(@rel, 'stylesheet')]" if-content="/html/head/link"/>
-        <before theme="/html/head/link[1]" content="/html/head/link[contains(@rel, 'stylesheet')]" />
-        <drop theme="/html/head/script" if-content="/html/head/script"/>  
-        <append theme="/html/head" content="/html/head/script" /> 
+  <rules css:if-content="#main">
 
-        <!--Header & Navigation-->
-        <replace css:theme="#account" css:content="#account" /> 
-        <replace css:theme="#navigation" css:content="#navigation" /> 
+    <!-- Head: meta -->                                              
+    <drop theme="/html/head/meta" if-content="/html/head/meta"/> 
+    <prepend theme="/html/head" content="/html/head/meta" />       
+    <!-- Head: title -->                                              
+    <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_header.xml" />
+    <!-- Head: base tag -->                                           
+    <replace theme="/html/head/base" content="/html/head/base" />    
+    <!-- Head: styles and scripts-->                                              
+    <drop theme="/html/head/link[not(contains(@href, 'style_custom.css')) and contains(@rel, 'stylesheet')]" if-content="/html/head/link"/>
+    <before theme="/html/head/link[1]" content="/html/head/link[contains(@rel, 'stylesheet')]" />
+    <drop theme="/html/head/script" if-content="/html/head/script"/> 
+    <append theme="/html/head" content="/html/head/script" />      
+    <!--Conditional comments-->
+    <append theme="/html/head">
+      <xsl:for-each select="/html/head/comment()">
+        <xsl:copy />
+      </xsl:for-each>
+    </append>
 
-        <!--Remove theme sidebar, title-->
-        <drop css:theme-children="#content_header" />
-        <drop css:theme-children="#sidebar" />
-
-        <!--Footer -->
-        <!--The footer should be static and not wordpress content. Rember if wordpress is not there diazo cannot -->
-        <!--render this page at all.-->
-        <!--<replace css:theme="#links" css:content="#links" css:if-content="#links" />-->
-
-    </rules>   
-  
-    <!--Content body and sidebar: default-->
-    <rules if-content="not(//*[@class='content-startpage']) and not(contains($path, '_pages'))">
-        <after css:theme="#globalheader" css:content="#instanceheader" /> 
-        <after css:theme="#globalheader" css:content="#instance_infobox_wrapper" /> 
-        <replace css:theme="#breadcrumbs" css:content="#breadcrumbs" /> 
-        <after css:theme="#breadcrumbs" css:content="#flash_messages_wrapper" /> 
-   
-        <replace css:theme="#content" css:content=".content" />
-    </rules>
-
+    <!--Fix wordpress links -->
+    <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_fixlinks.xml" />
+    
+    <replace css:theme="body" css:content="body" />
+    
     <!--Content body and sidebar: startpage with merged wordpress-->
     <rules if-content="//*[@class='content-startpage']">
-        <replace css:theme="#breadcrumbs" >
-            <div id="breadcrumbs" class="transparent"> </div>
-        </replace>
-        <!--WARNING: throws error if the wordpress backend is not available-->
-        <append css:theme="#sidebar" if="not($wordpress_backend = '')">
-            <xsl:variable name="url" select="concat('http://', $wordpress_backend_startseite)"/>
-            <xsl:copy-of select="document($url)//*[@id='primary']/ul/li[position() &lt; 8]/*"/>
-        </append>
-        <replace css:theme-children="#mainbar-dummy" if="not($wordpress_backend = '')">
-            <xsl:variable name="url_startpage" select="concat('http://', $wordpress_backend_startseite)"/>
-            <xsl:copy-of select="document($url_startpage)//*[contains(@class, 'entry-content')]/*"/>
-        </replace>
-        <!--Timeline Milestones-->
-        <after css:theme-children="#mainbar-dummy" css:content="#content script"/> 
-        <after css:theme-children="#mainbar-dummy" css:content="#timeline"/> 
-        <!--Workaround to handle bad wordpress html-->
-        <after css:theme-children="#mainbar-dummy" > 
-            <p><xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text></p>
-        </after>
-        <!--Global statistic-->
-        <after css:theme-children="#mainbar-dummy" css:content-children="#globalstats" /> 
-        <after css:theme-children="#mainbar-dummy" > 
-            <p><xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text></p>
-        </after>
-    </rules>                         
 
-    <!--Content body and sidebar: wordpress pages (/_pages)-->
-    <rules if-path="/_pages" >
-        <!--WARNING: throws error if the wordpress backend is not available-->
-        <replace css:theme-children="#content_header h1" >
-            <xsl:variable name="url_path" select="substring-after($path, '/_pages/')"/>
-            <xsl:variable name="url_page" select="concat('http://', $wordpress_backend, '/', $url_path)"/>
-            <xsl:copy-of select="document($url_page)//*[@id='content']/h1/*"/>
-        </replace>              
-        <replace css:theme-children="#mainbar-dummy" >
-            <xsl:variable name="url_path" select="substring-after($path, '/_pages/')"/>
-            <xsl:variable name="url_page" select="concat('http://', $wordpress_backend, '/', $url_path)"/>
-            <xsl:copy-of select="document($url_page)//*[contains(@class, 'entry-content')]/*"/>
-        </replace>            
-        <append css:theme="#sidebar">
-            <xsl:variable name="url_path" select="substring-after($path, '/_pages/')"/>
-            <xsl:variable name="url_page" select="concat('http://', $wordpress_backend, '/', $url_path)"/>
-            <xsl:copy-of select="document($url_page)//*[@id='secondary']/ul/li[position() &lt; 8]/*"/>
-        </append> 
+      <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_startpage.xml" />
+
+      <!--Timeline Milestones-->
+      <after css:theme-children="#mainbar-dummy" css:content="#content script"/>
+      <after css:theme-children="#mainbar-dummy" css:content="#timeline"/>
+      <!--Workaround to handle bad wordpress html-->
+      <after css:theme-children="#mainbar-dummy" >
+        <p><xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text></p>
+      </after>
     </rules>
 
-    <!--More detailed rules-->
-    <!--<replace css:theme="#globalheader" css:content="#globalheader" />--> 
-    
-    <!--<drop css:theme-children="#content_header" />-->
-    <!--<drop css:theme-children="#content_body" />-->
-    <!--<append css:theme="#content_header" css:content=".top_actions" />-->
-    <!--<append css:theme="#content_header" css:content=".page_title" />-->
-    <!--<append css:theme="#content_body" css:content=".mainbar"  />-->
-    <!--<append css:theme="#content_body" css:content-children=".content" if-content="not(//*[@class='mainbar'])" />--> 
+    <!--Content body and sidebar: wordpress pages (/_pages)-->
+    <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_pages.xml" />
+   
+    <!--Footer-->
+    <replace css:theme="#footer" css:content="#footer" />
+
+  </rules>  
 </rules>
 
