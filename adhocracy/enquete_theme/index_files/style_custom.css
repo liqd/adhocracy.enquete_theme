@@ -1,2 +1,73 @@
 /*Custom theme css to override the adhocracy css*/
 
+/*Header*/
+#logo {
+  height: 90px;
+}
+#topnav .follow {
+  display: none;
+}
+#main .ui-tabs {
+  border:none;
+}
+
+/*Tabs boarding startpage*/
+#main .ui-tabs .ui-tabs-panel {
+    padding:0;
+}
+#main .ui-tabs-nav {
+  clear: none;
+  height: 36px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  margin: 0px;
+  padding-top: 29px;
+}
+#main .ui-tabs-nav li {
+  height: 36px;
+  line-height: 36px;
+  background: url('/images/sprite_tab_navigation.png') repeat-x 0 -60px;
+}
+#main .ui-tabs-nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 19px;
+  display: block;
+}
+#main .ui-tabs-nav li.ui-state-active a {
+  color: #2D3441;
+}
+#main .ui-tabs-nav li.ui-state-active {
+  background: url('/images/sprite_tab_navigation.png') repeat-x 0 -10px;
+}
+#main .ui-tabs-nav li:hover a {
+  color: #fff;
+}
+#main .ui-tabs-nav li:hover {
+  background: url('/images/sprite_tab_navigation.png') repeat-x 0 -111px;
+}
+#main .ui-tabs-nav li {
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  -khtml-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  -khtml-border-top-left-radius: 0;
+  border-top-left-radius: 0;   
+  border: none;
+}
+
+#main .ui-widget-header {
+  border:none;
+  background:none;
+}
+#main .put-nav {
+  display:none;
+}
+#main .put-next {
+  background: transparent;
+  display:inline;
+}
+

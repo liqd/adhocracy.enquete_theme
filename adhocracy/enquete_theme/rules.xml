@@ -35,14 +35,14 @@
     
     <replace css:theme="body" css:content="body" />
     
+    <!--Logo-->
+    <replace content="//*[@id='logo']/img/attribute::src" ><xsl:attribute name="src">/static_theme/index_files/logo.png</xsl:attribute></replace>
+
+    
+    
     <!--Content body and sidebar: startpage with merged wordpress-->
-    <rules if-content="//*[@class='content-startpage']">
-
+    <rules if-content="//*[@id='content-startpage']">
       <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_startpage.xml" />
-
-      <!--Timeline Milestones-->
-      <after css:theme-children="#mainbar-dummy" css:content="#content script"/>
-      <after css:theme-children="#mainbar-dummy" css:content="#timeline"/>
       <!--Workaround to handle bad wordpress html-->
       <after css:theme-children="#mainbar-dummy" >
         <p><xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text></p>
