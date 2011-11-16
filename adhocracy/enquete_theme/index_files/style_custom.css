@@ -5,7 +5,11 @@
   height: 90px;
 }
 #topnav .follow {
-  display: none;
+  background-image: none;
+  color: #fff;
+}
+#header.logged_in .follow {
+  display:none;
 }
 #main .ui-tabs {
   border:none;
