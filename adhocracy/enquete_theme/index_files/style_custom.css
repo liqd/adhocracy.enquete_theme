@@ -75,3 +75,6 @@
   display:inline;
 }
 
+label.armhint {
+    display: none;
+}
