@@ -4,6 +4,10 @@
 #logo {
   height: 90px;
 }
+/*fix image size for loged users*/
+.logged_in #logo img {
+    width: 240px !important;
+}
 #topnav .follow {
   background-image: none;
   color: #fff;
