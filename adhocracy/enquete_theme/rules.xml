@@ -54,7 +54,8 @@
 
     <!--Content body and sidebar: wordpress pages (/_pages)-->
     <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_pages.xml" />
-   
+    <xi:include href="rules_wordpress_javascript.xml" />
+  
     <!--Footer-->
     <replace css:theme="#footer" css:content="#footer" />
 
