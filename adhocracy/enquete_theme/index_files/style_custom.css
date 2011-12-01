@@ -50,7 +50,7 @@ body {
   max-height: initial;
 }
 #subheader .page_wrapper {
-  background: url('/images/tabs_bg_large.png') no-repeat bottom center;
+  background: url('/static_theme/index_files/white-50.png') repeat bottom center;
   padding-top: 27px;
   height: 100px;
 } 
@@ -136,7 +136,7 @@ body {
 
 #main .ui-widget-header {
   border:none;
-  background:none;
+  background: url('/static_theme/index_files/white-50.png') repeat bottom center;
 }
 #main .put-nav {
   display:none;
