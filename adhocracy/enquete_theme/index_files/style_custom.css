@@ -1,25 +1,92 @@
 /*Custom theme css to override the adhocracy css*/
 
+/*Body*/
+body {
+  background: #fff url(/static_theme/index_files/body_bg.jpg);
+}
+
 /*Header*/
-#logo {
-  height: 90px;
+#header {
+  background:none;
 }
-/*fix image size for loged users*/
-.logged_in #logo img {
-    width: 240px !important;
-}
+
+#logo,
 #topnav .follow {
-  background-image: none;
-  color: #fff;
-}
-#header.logged_in .follow {
   display:none;
 }
-#main .ui-tabs {
-  border:none;
+#nav {
+  height:auto;
+  padding-top: 0;
+}
+#nav li a,
+#nav li {
+  height: 30px;
+}
+#header .page_margins {
+  margin-top: 15px;
+  height: 139px;
+  background: transparent url(/static_theme/index_files/logo.png) bottom left no-repeat;
+  margin-bottom: 15px;
+}
+#header .page_wrapper {
+  height: 45px;
+  background: url('/images/gradient_header.jpg') repeat-x #000; 
+}
+
+/*Content section*/
+#footer,
+#flash_message,
+#subheader, 
+#welcome_message, 
+#main {
+  background: transparent;
+}
+#flash_message .page_wrapper {
+  background: #FFFDE4;
+} 
+#subheader {
+  padding-top: 0;
+  margin-bottom: 0;
+  max-height: initial;
+}
+#subheader .page_wrapper {
+  background: url('/images/tabs_bg_large.png') no-repeat bottom center;
+  padding-top: 27px;
+  height: 100px;
+} 
+#subheader .subnav,
+#subheader .searchbox {
+  padding-top: 0;
+}
+#main {
+  margin: 0;
+}
+
+#main .page_margins {
+  display:table; 
+  border-collapse:collapse; 
+}
+#main .page_wrapper {
+  padding: 10px 0 60px;
+  background: #fff;
+  min-height: 60em;
+  /*TODO: use table row instead of min-height here*/
+  /*display:table-row; */
+} 
+#main #col1 {
+  /*display:table-cell; */
+}
+#main aside {
+  /*display:table-cell; */
+}
+#footer .page_wrapper {
+  background: url('/images/gradient_footer.jpg') repeat-x top left #e5e6e8; 
 }
 
 /*Tabs onboarding aboutpage*/
+#main .ui-tabs {
+  border:none;
+}  
 #main .ui-tabs .ui-tabs-panel {
     padding:0;
 }

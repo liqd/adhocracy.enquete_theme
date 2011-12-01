@@ -34,7 +34,7 @@
     <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_fixlinks.xml" />
     
     <!--Body-->
-    <replace css:theme="body" css:content="body" />
+    <copy css:theme="body" css:content="body" />
     
     <!--Logo-->
     <replace content="//*[@id='logo']/img/attribute::src" ><xsl:attribute name="src">/static_theme/index_files/logo.png</xsl:attribute></replace>
@@ -42,6 +42,12 @@
     <replace content="//*[@id='topnav']/a[contains(@class, 'follow')]/attribute::href" ><xsl:attribute name="href">http://blog.enquetebeteiligung.de</xsl:attribute></replace>
     <replace content="//*[@id='topnav']/a[contains(@class, 'follow')]/child::text()" >Blog Enquete-Komission</replace>
 
+    <!--Navigation-->
+    <replace css:content="#nav_dummy">
+      <li id="nav_blog">
+        <a href="http://blog.enquetebeteiligung.de">Blog</a>
+      </li>
+    </replace>       
     
     <!--Content body and sidebar: startpage with merged wordpress-->
     <rules if-content="//*[@id='content-startpage']">
