@@ -7,7 +7,7 @@ body {
 
 /*Header*/
 #header {
-  background:none;
+  background: none;
 }
 
 #logo,
@@ -18,19 +18,27 @@ body {
   height:auto;
   padding-top: 0;
 }
+#header.logged_in #nav li a,
+#header.logged_in #nav li,
 #nav li a,
 #nav li {
-  height: 30px;
+  height: 24px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+}
+#nav li.current {
+background: url("/static_theme/index_files/gradient_navi_highlight.jpg") repeat-x scroll right bottom transparent;
 }
 #header .page_margins {
   margin-top: 15px;
-  height: 139px;
+  height: 106px;
   background: transparent url(/static_theme/index_files/logo.png) bottom left no-repeat;
   margin-bottom: 15px;
 }
-#header .page_wrapper {
-  height: 45px;
-  background: url('/images/gradient_header.jpg') repeat-x #000; 
+#header .page_wrapper,
+#header.logged_in .page_wrapper {
+  height: 29px;
+  background: url('/static_theme/index_files/header_bg_gradient.png') top repeat-x transparent;
 }
 
 /*Content section*/
