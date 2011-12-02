@@ -49,6 +49,9 @@ background: url("/static_theme/index_files/gradient_navi_highlight.jpg") repeat-
 #main {
   background: transparent;
 }
+#flash_message {
+padding-bottom: 15px;
+}
 #flash_message .page_wrapper {
   background: #FFFDE4;
 } 
@@ -62,10 +65,14 @@ background: url("/static_theme/index_files/gradient_navi_highlight.jpg") repeat-
   /* padding-top: 27px;*/
   height: 100px;
 } 
-#subheader #subnav,
-#subheader #searchbox {
+#subnav,
+#searchbox {
   padding-top: 10px;
 }
+#subnav{
+  padding-left: 4px;
+}
+
 
 #organisation_logo {
   padding-top: 19px;
@@ -80,7 +87,7 @@ background: url("/static_theme/index_files/gradient_navi_highlight.jpg") repeat-
   border-collapse:collapse; 
 }
 #main .page_wrapper {
-  padding: 10px 0 60px;
+  padding: 40px 0 60px;
   background: #fff;
   min-height: 60em;
   /*TODO: use table row instead of min-height here*/
