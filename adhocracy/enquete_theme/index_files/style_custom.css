@@ -84,7 +84,6 @@ padding-bottom: 15px;
 }
 
 #main .page_margins {
-  display:table; 
   border-collapse:collapse; 
 }
 #main .page_wrapper {
