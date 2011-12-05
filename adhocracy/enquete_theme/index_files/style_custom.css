@@ -17,6 +17,7 @@ body {
 #nav {
   height:auto;
   padding-top: 0;
+  font-weight: normal;
 }
 #header.logged_in #nav li a,
 #header.logged_in #nav li,
