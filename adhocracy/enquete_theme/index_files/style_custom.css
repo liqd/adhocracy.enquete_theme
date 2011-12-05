@@ -36,8 +36,7 @@ background: url("/static_theme/index_files/gradient_navi_highlight.jpg") repeat-
   background: transparent url(/static_theme/index_files/logo.png) bottom left no-repeat;
   margin-bottom: 15px;
 }
-#header .page_wrapper,
-body.logged_in .page_wrapper {
+#header .page_wrapper{
   height: 29px;
   background: url('/static_theme/index_files/header_bg_gradient.png') top repeat-x transparent;
 }
