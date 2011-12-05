@@ -19,8 +19,8 @@ body {
   padding-top: 0;
   font-weight: normal;
 }
-#header.logged_in #nav li a,
-#header.logged_in #nav li,
+body.logged_in #nav li a,
+body.logged_in #nav li,
 #nav li a,
 #nav li {
   height: 24px;
@@ -37,7 +37,7 @@ background: url("/static_theme/index_files/gradient_navi_highlight.jpg") repeat-
   margin-bottom: 15px;
 }
 #header .page_wrapper,
-#header.logged_in .page_wrapper {
+body.logged_in .page_wrapper {
   height: 29px;
   background: url('/static_theme/index_files/header_bg_gradient.png') top repeat-x transparent;
 }
