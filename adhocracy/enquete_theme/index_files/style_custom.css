@@ -108,11 +108,15 @@ padding-bottom: 15px;
 }
 
 /*Tabs onboarding aboutpage*/
-#main .ui-tabs {
-  border:none;
-}
+
+#main .ui-tabs,
 #main .ui-tabs .ui-tabs-panel {
-    padding:0;
+  border:none;
+  padding:0;
+}
+#main .ui-tabs p {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 #main .ui-tabs-nav {
   clear: none;
@@ -121,7 +125,6 @@ padding-bottom: 15px;
   font-size: 15px;
   color: #fff;
   margin: 0px;
-  padding-top: 29px;
 }
 #main .ui-tabs-nav li {
   height: 36px;
