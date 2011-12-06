@@ -60,6 +60,7 @@
 
     <!--Content body and sidebar: aboutpage with merged wordpress-->
     <rules if-path="/_pages/about">
+      <replace content="//*[@id='main']/attribute::class" ><xsl:attribute name="class">with_wordpress_tabs</xsl:attribute></replace>
       <drop css:content="#col1" attributes="id" />
       <drop css:content="#col3" />
     </rules>
@@ -70,6 +71,7 @@
 
     <!--Footer-->
     <replace css:theme="#footer" css:content="#footer" />
+    <replace content="//*[@id='link_footer_logo']/img/attribute::src" ><xsl:attribute name="src">/static_theme/index_files/logo_adhocracy_code_footer.png</xsl:attribute></replace>
 
   </rules>
 </rules>

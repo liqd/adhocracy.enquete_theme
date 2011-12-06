@@ -4,6 +4,13 @@
 body {
   background: #fff url(/static_theme/index_files/body_bg.jpg);
 }
+h1, h2, h3, h4, h5, h6, h7 {
+font-family: Georgia,Times New Roman,Times,serif;
+}
+h1 {
+  margin: 0;
+  padding: 27px 23px;
+}
 
 /*Header*/
 #header {
@@ -87,38 +94,71 @@ padding-bottom: 15px;
 }
 #main .page_wrapper {
   padding: 40px 0 60px;
-  background: #fff;
-  min-height: 60em;
-  /*TODO: use table row instead of min-height here*/
-  /*display:table-row; */
+  background-color: #fff;
+  float: left;
+  width: 1004px;
 }
-#main #col1 {
-  /*display:table-cell; */
-}
-#main aside {
-  /*display:table-cell; */
-}
-#footer .page_wrapper {
-  background: #445052 url(/static_theme/index_files/footer_hintergrund.gif) top left repeat-x;
-  color: #fff;
-}
-#second_footer_line,
-#footer_line {
-  background:none;
+
+/*Wordpress pages*/
+#main .widget-area .shailan_SubpagesWidget,
+#main .widget-container ul,
+#main ul.subpages li,
+#main .widget-container {
+  list-style: none;
+  background: none;
 }
 
 /*Tabs onboarding aboutpage*/
 
+#tabs-1 {
+  min-height: 714px;
+}
+#tab_background_dummy {
+  /*This is only here to show some white background during the tab fading out effect*/
+  background-color:#fff;
+  z-index: 1;
+  position: absolute;
+  top: 50px;
+  width: 1004px;
+  height: 700px;
+}
+#tabs-1 {
+  /*This is only here to show some white background during the tab fading out effect*/
+  z-index: 2;
+}
+
+#main .ui-widget-content,
+#main.with_wordpress_tabs .page_wrapper {
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color:transparent;
+  min-height: 750px;
+  position:relative;
+}
+#main.with_wordpress_tabs #col1_content {
+  padding-left: 0;
+  padding-right: 0;
+  /*10px 0 23px;,c */
+}
+#main .ui-widget-header {
+  border:none;
+  background-color: transparent;
+  background: url('/static_theme/index_files/white-50.png') repeat bottom center;
+  padding-top: 14px;
+}
+#tabs-1 > div,
+#tabs-1 h1,
+#main .ui-tabs > div,
+#main .ui-tabs h1 {
+  background-color: #fff;
+}
 #main .ui-tabs,
 #main .ui-tabs .ui-tabs-panel {
   border:none;
   padding:0;
 }
-#main .ui-tabs p {
-  padding-left: 10px;
-  padding-right: 10px;
-}
 #main .ui-tabs-nav {
+  border:none;
   clear: none;
   height: 36px;
   font-weight: bold;
@@ -149,6 +189,7 @@ padding-bottom: 15px;
 #main .ui-tabs-nav li:hover {
   background: url('/images/sprite_tab_navigation.png') repeat-x 0 -111px;
 }
+#main .ui-widget-header,
 #main .ui-tabs-nav li {
   -moz-border-radius-topright: 0;
   -webkit-border-top-right-radius: 0;
@@ -157,21 +198,50 @@ padding-bottom: 15px;
   -moz-border-radius-topleft: 0;
   -webkit-border-top-left-radius: 0;
   -khtml-border-top-left-radius: 0;
-  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -khtml-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -khtml-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
   border: none;
 }
 
-#main .ui-widget-header {
-  border:none;
-  background: url('/static_theme/index_files/white-50.png') repeat bottom center;
-}
 #main .put-nav {
   display:none;
 }
 label.armhint {
     display: none;
 }
+#main .ui-tabs p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
-h1, h2, h3, h4, h5, h6, h7 {
-font-family: Georgia,Times New Roman,Times,serif;
+/*Footer*/
+
+#footer .page_wrapper {
+  background: #445052 url('/static_theme/index_files/footer_hintergrund.gif') top left repeat-x;
+  color: #fff;
+  padding-bottom: 0;
+}
+#second_footer_line,
+#footer_line {
+  background:none;
+}
+#footer ul {
+  list-style-image: url('/static_theme/index_files/list-item-bar.png');
+}
+#footer, .footer_content h3, .footer_content a {
+    color: #fff;
+}
+.footer_content a {
+    text-decoration: none;
+}
+.footer_content a:hover {
+    text-decoration: underline;
 }
