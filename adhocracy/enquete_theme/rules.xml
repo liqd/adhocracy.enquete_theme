@@ -11,18 +11,18 @@
 
   <rules css:if-content="#main">
 
-    <!-- Head: meta -->                                              
-    <drop theme="/html/head/meta" if-content="/html/head/meta"/> 
-    <prepend theme="/html/head" content="/html/head/meta" />       
-    <!-- Head: title -->                                              
+    <!-- Head: meta -->
+    <drop theme="/html/head/meta" if-content="/html/head/meta"/>
+    <prepend theme="/html/head" content="/html/head/meta" />
+    <!-- Head: title -->
     <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_header.xml" />
-    <!-- Head: base tag -->                                           
-    <replace theme="/html/head/base" content="/html/head/base" />    
-    <!-- Head: styles and scripts-->                                              
+    <!-- Head: base tag -->
+    <replace theme="/html/head/base" content="/html/head/base" />
+    <!-- Head: styles and scripts-->
     <drop theme="/html/head/link[not(contains(@href, 'style_custom.css')) and contains(@rel, 'stylesheet')]" if-content="/html/head/link"/>
     <before theme="/html/head/link[1]" content="/html/head/link[contains(@rel, 'stylesheet')]" />
-    <drop theme="/html/head/script" if-content="/html/head/script"/> 
-    <append theme="/html/head" content="/html/head/script" />      
+    <drop theme="/html/head/script" if-content="/html/head/script"/>
+    <append theme="/html/head" content="/html/head/script" />
     <!--Conditional comments-->
     <append theme="/html/head">
       <xsl:for-each select="/html/head/comment()">
@@ -32,10 +32,10 @@
 
     <!--Fix wordpress links -->
     <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_fixlinks.xml" />
-    
+
     <!--Body-->
     <copy css:theme="body" css:content="body" />
-    
+
     <!--Logo-->
     <replace content="//*[@id='logo']/img/attribute::src" ><xsl:attribute name="src">/static_theme/index_files/logo.png</xsl:attribute></replace>
     <!--Header follow link-->
@@ -47,8 +47,8 @@
       <li id="nav_blog">
         <a href="http://blog.enquetebeteiligung.de">Blog</a>
       </li>
-    </replace>       
-    
+    </replace>
+
     <!--Content body and sidebar: startpage with merged wordpress-->
     <rules if-content="//*[@id='content-startpage']">
       <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_startpage.xml" />
@@ -58,13 +58,19 @@
       </after>
     </rules>
 
+    <!--Content body and sidebar: aboutpage with merged wordpress-->
+    <rules if-path="/_pages/about">
+      <drop css:content="#col1" attributes="id" />
+      <drop css:content="#col3" />
+    </rules>
+
     <!--Content body and sidebar: wordpress pages (/_pages)-->
     <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_pages.xml" />
     <xi:include href="rules_wordpress_javascript.xml" />
-  
+
     <!--Footer-->
     <replace css:theme="#footer" css:content="#footer" />
 
-  </rules>  
+  </rules>
 </rules>
 
