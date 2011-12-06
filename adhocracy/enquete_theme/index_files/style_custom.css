@@ -44,8 +44,8 @@ background: url("/static_theme/index_files/gradient_navi_highlight.jpg") repeat-
 /*Content section*/
 #footer,
 #flash_message,
-#subheader, 
-#welcome_message, 
+#subheader,
+#welcome_message,
 #main {
   background: transparent;
 }
@@ -54,7 +54,7 @@ padding-bottom: 15px;
 }
 #flash_message .page_wrapper {
   background: #FFFDE4;
-} 
+}
 #subheader {
   padding-top: 0;
   margin-bottom: 0;
@@ -64,7 +64,7 @@ padding-bottom: 15px;
   background: url('/static_theme/index_files/white-50.png') repeat bottom center;
   /* padding-top: 27px;*/
   height: 100px;
-} 
+}
 #subnav,
 #searchbox {
   padding-top: 10px;
@@ -83,7 +83,7 @@ padding-bottom: 15px;
 }
 
 #main .page_margins {
-  border-collapse:collapse; 
+  border-collapse:collapse;
 }
 #main .page_wrapper {
   padding: 40px 0 60px;
@@ -91,7 +91,7 @@ padding-bottom: 15px;
   min-height: 60em;
   /*TODO: use table row instead of min-height here*/
   /*display:table-row; */
-} 
+}
 #main #col1 {
   /*display:table-cell; */
 }
@@ -99,13 +99,18 @@ padding-bottom: 15px;
   /*display:table-cell; */
 }
 #footer .page_wrapper {
-  background: url('/images/gradient_footer.jpg') repeat-x top left #e5e6e8; 
+  background: #445052 url(/static_theme/index_files/footer_hintergrund.gif) top left repeat-x;
+  color: #fff;
+}
+#second_footer_line,
+#footer_line {
+  background:none;
 }
 
 /*Tabs onboarding aboutpage*/
 #main .ui-tabs {
   border:none;
-}  
+}
 #main .ui-tabs .ui-tabs-panel {
     padding:0;
 }
@@ -149,7 +154,7 @@ padding-bottom: 15px;
   -moz-border-radius-topleft: 0;
   -webkit-border-top-left-radius: 0;
   -khtml-border-top-left-radius: 0;
-  border-top-left-radius: 0;   
+  border-top-left-radius: 0;
   border: none;
 }
 
@@ -160,11 +165,6 @@ padding-bottom: 15px;
 #main .put-nav {
   display:none;
 }
-#main .put-next {
-  background: transparent;
-  display:inline;
-}
-
 label.armhint {
     display: none;
 }
