@@ -23,10 +23,16 @@ input[type=text], input[type=password], textarea {
   background: none;
 }
 
-#logo,
+#logo {
+  position: absolute;
+  margin: 29px 0 0 -23px;
+  height: 79px;
+}
+
 #topnav .follow {
   display:none;
 }
+
 #nav {
   height:auto;
   padding-top: 0;
@@ -46,7 +52,6 @@ background: url("/static_theme/index_files/gradient_navi_highlight.jpg") repeat-
 #header .page_margins {
   margin-top: 15px;
   height: 106px;
-  background: transparent url(/static_theme/index_files/logo.png) bottom left no-repeat;
   margin-bottom: 15px;
 }
 #header .page_wrapper{
