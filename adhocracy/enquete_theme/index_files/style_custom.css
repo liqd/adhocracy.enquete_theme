@@ -23,7 +23,7 @@ input[type=text], input[type=password], textarea {
   background: none;
 }
 
-#logo {
+#logo, body.logged_in #logo {
   position: absolute;
   margin: 29px 0 0 -23px;
   height: 79px;
