@@ -5,11 +5,17 @@ body {
   background: #fff url(/static_theme/index_files/body_bg.jpg);
 }
 h1, h2, h3, h4, h5, h6, h7 {
-font-family: Georgia,Times New Roman,Times,serif;
+/*font-family: Arial, Times New Roman,Times,serif;*/
 }
 h1 {
   margin: 0;
   padding: 27px 23px;
+}
+p {
+  margin-bottom: 12px;
+}
+input[type=text], input[type=password], textarea {
+  font-family: Arial,san-serif;
 }
 
 /*Header*/
@@ -127,6 +133,37 @@ padding-bottom: 15px;
 
 /*Tabs onboarding aboutpage*/
 
+#main .ui-widget {
+  font-family: Arial,sans-serif;
+}
+#main .ui-widget input,
+#main .ui-widget button {
+  font-family: Arial,sans-serif;
+  font-size: 13px;
+}
+/* TODO: This could be much shorter [joka] */
+#main .ui-widget p,
+#main .ui-widget h1,
+#main .ui-widget h2,
+#main .ui-widget h3 {
+  margin-left: 23px;
+  margin-right: 23px;
+  padding-left: 0;
+  padding-right: 0;
+  width: 65%;
+}
+#main .ui-widget .register {
+  margin-left: 13px;
+}
+#main .ui-widget img {
+  margin-left: 23px;
+  margin-right: 23px;
+}
+#main .ui-widget h1 {
+  margin: 0 23px 27px 23px;
+  padding: 27px 0 0 0;
+  border-bottom: 1px dotted #CCC;
+}
 #tabs-1 {
   min-height: 714px;
 }
@@ -193,6 +230,8 @@ padding-bottom: 15px;
   text-decoration: none;
   padding: 0 19px;
   display: block;
+  font-weight: bold;
+  font-size: 15px;
 }
 #main .ui-tabs-nav li.ui-state-active a {
   color: #2D3441;
@@ -233,10 +272,6 @@ padding-bottom: 15px;
 }
 label.armhint {
     display: none;
-}
-#main .ui-tabs p {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 /*Footer*/
