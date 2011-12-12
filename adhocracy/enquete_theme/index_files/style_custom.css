@@ -98,8 +98,13 @@ padding-bottom: 15px;
 #subheader .page_wrapper {
   background: url('/static_theme/index_files/white-50.png') repeat bottom center;
   /* padding-top: 27px;*/
+  height: 93px;
+}
+
+#subheader.logo .page_wrapper {
   height: 100px;
 }
+
 #subnav,
 #searchbox {
   padding-top: 10px;
