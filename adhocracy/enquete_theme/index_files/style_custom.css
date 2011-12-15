@@ -307,3 +307,32 @@ label.armhint {
 .footer_content a:hover {
     text-decoration: underline;
 }
+
+/* Menu in the right column */
+
+#col3 .widget-container {
+    padding-right: 2em;
+}
+
+#col3 ul.subpages {
+background: #39586a;
+padding: 0.5em 1.5em;
+}
+
+#col3 ul.subpages li a{
+display: block;
+color: white;
+border-top: 1px solid #4a6674;
+border-bottom: 1px solid #2b4856;
+width: 100%;
+padding: 0.5em 0;
+font-weight: bold;
+}
+
+#col3 ul.subpages li:first-child a {
+border-top: transparent;
+}
+
+#col3 ul.subpages li:last-child a {
+border-bottom: transparent;
+}
