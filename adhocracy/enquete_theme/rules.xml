@@ -9,7 +9,7 @@
   <!--do not theme ajax requests-->
   <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_notheme.xml" />
 
-  <rules css:if-content="#main">
+  <rules if-content="/html/body/div[@id='main']">
 
     <!-- Head: meta -->
     <drop theme="/html/head/meta" if-content="/html/head/meta"/>
@@ -35,21 +35,21 @@
     <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_fixlinks.xml" />
 
     <!--Body-->
-    <copy css:theme="body" css:content="body" />
+    <copy theme="/html/body" content="/html/body" />
 
     <!--Logo-->
-    <replace content="//*[@id='logo']/img/attribute::src" ><xsl:attribute name="src">/static_theme/index_files/logo.png</xsl:attribute></replace>
+    <replace content="//a[@id='logo']/img/attribute::src" ><xsl:attribute name="src">/static_theme/index_files/logo.png</xsl:attribute></replace>
     <!--Header follow link-->
-    <replace content="//*[@id='topnav']/a[contains(@class, 'follow')]/attribute::href" ><xsl:attribute name="href">http://blog.enquetebeteiligung.de</xsl:attribute></replace>
-    <replace content="//*[@id='topnav']/a[contains(@class, 'follow')]/child::text()" >Blog Enquete-Komission</replace>
+    <replace content="//div[@id='topnav']/a[contains(@class, 'follow')]/attribute::href" ><xsl:attribute name="href">http://blog.enquetebeteiligung.de</xsl:attribute></replace>
+    <replace content="//div[@id='topnav']/a[contains(@class, 'follow')]/child::text()" >Blog Enquete-Komission</replace>
 
     <!--Navigation-->
-    <replace css:content="#nav_dummy">
+    <replace css:content="li#nav_dummy">
       <li id="nav_blog">
         <a href="http://blog.enquetebeteiligung.de">Blog</a>
       </li>
     </replace>
-    <replace css:content="#nav_about">
+    <replace css:content="li#nav_about">
       <div id="about_menu">
         <ul>
           <li>
@@ -77,17 +77,17 @@
     </replace>
 
     <!--Content body and sidebar: startpage with merged wordpress-->
-    <rules if-content="//*[@id='content-startpage']">
+    <rules if-content="//div[@id='content-startpage']">
       <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_startpage.xml" />
       <!--Workaround to handle bad wordpress html-->
-      <after css:theme-children="#mainbar-dummy" >
+      <after css:theme-children="body div div div div#mainbar-dummy" >
         <p><xsl:text disable-output-escaping="yes">&amp;nbsp;</xsl:text></p>
       </after>
     </rules>
 
     <!--Content body and sidebar: aboutpage with merged wordpress-->
     <rules if-path="/_pages/about/">
-      <replace content="//*[@id='main']/attribute::class" ><xsl:attribute name="class">with_wordpress_tabs</xsl:attribute></replace>
+      <replace content="//div[@id='main']/attribute::class" ><xsl:attribute name="class">with_wordpress_tabs</xsl:attribute></replace>
       <drop css:content="#col1" attributes="id" />
       <drop css:content="#col3" />
     </rules>
@@ -97,8 +97,8 @@
     <xi:include href="rules_wordpress_javascript.xml" />
 
     <!--Footer-->
-    <replace css:theme="#footer" css:content="#footer" />
-    <replace content="//*[@id='link_footer_logo']/img/attribute::src" ><xsl:attribute name="src">/static_theme/index_files/logo_adhocracy_code_footer.png</xsl:attribute></replace>
+    <replace css:theme="div#footer" css:content="div#footer" />
+    <replace content="//a[@id='link_footer_logo']/img/attribute::src" ><xsl:attribute name="src">/static_theme/index_files/logo_adhocracy_code_footer.png</xsl:attribute></replace>
 
   </rules>
 </rules>
