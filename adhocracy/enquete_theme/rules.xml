@@ -35,7 +35,7 @@
     <xi:include href="../../../adhocracy.wordpressbasic_theme/adhocracy/wordpressbasic_theme/rules_fixlinks.xml" />
 
     <!--Body-->
-    <copy theme="/html/body" content="/html/body" />
+    <replace theme="/html/body" content="/html/body" />
 
     <!--Logo-->
     <replace content="//a[@id='logo']/img/attribute::src" ><xsl:attribute name="src">/static_theme/index_files/logo.png</xsl:attribute></replace>
