@@ -52,7 +52,6 @@ background: url("/static_theme/index_files/gradient_navi_highlight.jpg") repeat-
 #header .page_margins {
   margin-top: 15px;
   height: 106px;
-  margin-bottom: 15px;
 }
 #header .page_wrapper{
   height: 29px;
@@ -84,9 +83,7 @@ body.logged_in #about_menu li a,
 #main {
   background: transparent;
 }
-#flash_message {
-padding-bottom: 15px;
-}
+
 #flash_message .page_wrapper {
   background: #FFFDE4;
 }
@@ -335,4 +332,9 @@ border-top: transparent;
 
 #col3 ul.subpages li:last-child a {
 border-bottom: transparent;
+}
+
+#tutorial-banner {
+background-color: white;
+padding: 1px;
 }
