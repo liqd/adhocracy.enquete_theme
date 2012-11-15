@@ -1,0 +1,17 @@
+.svn
+.hgsvn
+*.pyc
+*.swp
+*.swo
+*.egg-info
+*.db
+data/*
+bundestag.ini
+*.DS_Store
+.\#*
+*~
+.*~
+docs/_build/*
+test-data/index
+site/*
+*.egg
