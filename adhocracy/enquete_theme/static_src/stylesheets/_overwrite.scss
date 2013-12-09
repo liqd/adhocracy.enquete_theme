@@ -3,9 +3,11 @@
 /*Body*/
 body {
     background: #fff url(/static_theme/index_files/body_bg.jpg);
+    padding: 1em 0 2em;
 }
 html.overlay body {
     background: none;
+    padding: 0;
 }
 
 /*Content section*/
