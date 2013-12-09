@@ -1,0 +1,115 @@
+/*Tabs onboarding aboutpage*/
+#main .ui-widget {
+    font-family: Arial,sans-serif;
+    @include border-radius(0);
+}
+#main .ui-widget input,
+#main .ui-widget button {
+    font-family: Arial,sans-serif;
+    font-size: 13px;
+}
+/* TODO: This could be much shorter [joka] */
+#main .ui-widget p,
+#main .ui-widget h1,
+#main .ui-widget h2,
+#main .ui-widget h3 {
+    margin-left: 23px;
+    margin-right: 23px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 65%;
+}
+#main .ui-widget .register {
+    margin-left: 13px;
+}
+#main .ui-widget img {
+    margin-left: 23px;
+    margin-right: 23px;
+}
+#main .ui-widget h1 {
+    margin: 0 23px 27px 23px;
+    padding: 27px 0 0 0;
+    border-bottom: 1px dotted #CCC;
+}
+#tabs-1 {
+    min-height: 714px;
+}
+#tab_background_dummy {
+    /*This is only here to show some white background during the tab fading out effect*/
+    background-color:#fff;
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    width: 1004px;
+    //height: 700px;
+}
+#tabs-1 {
+    /*This is only here to show some white background during the tab fading out effect*/
+    z-index: 2;
+}
+
+#main .ui-widget-content,
+#main.with_wordpress_tabs .page_wrapper {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: transparent;
+    min-height: 750px;
+    position:relative;
+    @include border-radius(0);
+}
+#main.with_wordpress_tabs #col1_content {
+    padding-left: 0;
+    padding-right: 0;
+    /*10px 0 23px;,c */
+}
+#main .ui-widget-header {
+    border:none;
+    background-color: transparent;
+    background: url('/static_theme/index_files/white-50.png') repeat bottom center;
+    padding-top: 14px;
+}
+#main .ui-tabs,
+#main .ui-tabs .ui-tabs-panel {
+    border:none;
+    padding:0;
+}
+#main .ui-tabs .ui-tabs-panel {
+    background: white;
+    padding-bottom: 1em;
+}
+#main .ui-tabs-nav {
+    border:none;
+    clear: none;
+    height: 36px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    margin: 0px;
+}
+#main .ui-widget-header,
+#main .ui-tabs-nav li {
+    @include border-radius(0);
+    border: none;
+}
+
+#main .ui-tabs-nav li a {
+    @include button($button-color);
+}
+#main .ui-tabs-nav li.ui-state-active a {
+    background-color: #fff;
+    @include background-image(linear-gradient(to bottom, darken(#fff, 12%), #fff));
+    color: #2D3441;
+
+    &:hover {
+        background-color: darken(#fff, 7%);
+        @include background-image(linear-gradient(to bottom, darken(#fff, 16%), #fff));
+        color: #2D3441;
+    }
+}
+#main .put-nav {
+    display:none;
+}
+label.armhint {
+    display: none;
+}
+
