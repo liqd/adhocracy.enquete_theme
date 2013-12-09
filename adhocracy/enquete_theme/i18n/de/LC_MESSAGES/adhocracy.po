@@ -58,11 +58,11 @@ msgid ""
 msgstr "Generierung von Willkommens Codes angefordert, aber die Willkommens-Funktionalität (adhocracy.enable_welcome) ist nicht aktiv."
 
 msgid "In all instances"
-msgstr "In allen Gruppen"
+msgstr "In allen Projektgruppen"
 
 #, python-format
 msgid "In instance \"%s\""
-msgstr "In Gruppe „%s“"
+msgstr "In Projektgruppe „%s“"
 
 #, python-format
 msgid "We cannot find the badge with the id %s"
@@ -161,7 +161,7 @@ msgid "Members import"
 msgstr "Mitglieder importieren"
 
 msgid "Instance created successfully. You can now configure it as you like."
-msgstr "Gruppe erfolgreich angelegt. Sie können diese nun nach Ihrem Bedarf konfigurieren."
+msgstr "Projektgruppe erfolgreich angelegt. Sie können diese nun nach Ihrem Bedarf konfigurieren."
 
 msgid "Delegations are enabled."
 msgstr "Delegationen sind aktiv."
@@ -170,16 +170,16 @@ msgid "Delegations are disabled."
 msgstr "Delegationen sind inaktiv."
 
 msgid "tutorial_instance_show_intro"
-msgstr "Willkommen auf der Startseite der Gruppe."
+msgstr "Willkommen auf der Startseite der Projektgruppe."
 
 msgid "This instance is not yet open for public participation."
-msgstr "Diese Gruppe ist noch nicht für öffentliche Beteiligung geöffnet."
+msgstr "Diese Projektgruppe ist noch nicht für öffentliche Beteiligung geöffnet."
 
 msgid ""
 "This instance is not active for use and is archived. It isn't possible to "
 "perform any changes to the instance, but all content is available to be "
 "read."
-msgstr "Diese Gruppe wird nicht aktiv genutzt und ist archiviert. Es ist nicht möglich, Änderungen an dieser Gruppe zu machen. Alle Inhalte können aber weiterhin angesehen werden."
+msgstr "Diese Projektgruppe wird nicht aktiv genutzt und ist archiviert. Es ist nicht möglich, Änderungen an dieser Projektgruppe zu machen. Alle Inhalte können aber weiterhin angesehen werden."
 
 msgid "The logo has been deleted."
 msgstr "Das Logo wurde entfernt."
@@ -210,7 +210,7 @@ msgstr "Eine Zweidrittelmehrheit"
 
 #, python-format
 msgid "The instance %s has been deleted."
-msgstr "Die Gruppe %s wurde gelöscht."
+msgstr "Die Projektgruppe %s wurde gelöscht."
 
 #, python-format
 msgid "Welcome to %(instance)s"
@@ -222,14 +222,14 @@ msgstr "Sie sind kein Mitglied von %(instance)s."
 
 #, python-format
 msgid "You're the founder of %s, cannot leave."
-msgstr "Als Gründer von %s können Sie die Gruppe nicht verlassen."
+msgstr "Als Gründer von %s können Sie die Projektgruppe nicht verlassen."
 
 #, python-format
 msgid "You've left %(instance)s."
 msgstr "Sie haben %(instance)s verlassen."
 
 msgid "You cannot manipulate one instance from within another instance."
-msgstr "Sie können eine Gruppe nicht von einer anderen Gruppe aus bearbeiten."
+msgstr "Sie können eine Projektgruppe nicht von einer anderen Projektgruppe aus bearbeiten."
 
 msgid "Sorry, but you're not allowed to set these message options"
 msgstr "Leider ist es Ihnen nicht erlaubt diese Nachrichten Einstellungen zu setzen."
@@ -259,7 +259,7 @@ msgid "Your message has been sent. Thanks."
 msgstr "Ihre Nachricht wurde versandt. Danke."
 
 msgid "tutorial_milestones_tab"
-msgstr "Diese Seite bietet Ihnen eine Übersicht über die Termine der Gruppe."
+msgstr "Diese Seite bietet Ihnen eine Übersicht über die Termine der Projektgruppe."
 
 msgid "tutorial_milestone_details_tab"
 msgstr "Die Termin-Detailansicht zeigt weitere Informationen zu dem Termin an."
@@ -329,13 +329,13 @@ msgid "Successfully created new user account %s"
 msgstr "Erfolgreich neuen Nutzer/innen-Zugang %s angelegt"
 
 msgid "tutorial_norms_overview_tab"
-msgstr "Übersichtseite über die Beschlüsse der Gruppe. Die Liste zeigt nicht nur alle von der Gruppe eingebrachten Beschlüsse an, sondern unter dem Titel der Beschlüsse wird auch die Anzahl der momentan dazugehörigen Vorschläge und Argumente angezeigt"
+msgstr "Übersichtseite über die Papiere der Projektgruppe. Die Liste zeigt nicht nur alle von der Projektgruppe eingebrachten Papiere an, sondern unter dem Titel der Papiere wird auch die Anzahl der momentan dazugehörigen Vorschläge und Argumente angezeigt"
 
 msgid "No proposal has been specified"
 msgstr "Es wurde kein Vorschlag angegeben."
 
 msgid "You cannot create a new norm"
-msgstr "Sie können keinen Beschluss anlegen."
+msgstr "Sie können kein Papier anlegen."
 
 #, python-format
 msgid "Variant %s is already present, cannot branch."
@@ -369,7 +369,7 @@ msgstr "Originalversion"
 
 #, python-format
 msgid "Page %s does not allow selections"
-msgstr "Beschluss %s kann nicht selektiert werden"
+msgstr "Papier %s kann nicht selektiert werden"
 
 #, python-format
 msgid "Variant %s does not exist!"
@@ -379,20 +379,20 @@ msgid "alphabetically"
 msgstr "alphabetisch"
 
 msgid "tutorial_norm_show_tab"
-msgstr "Auf der Detailseite finden Sie die momentan gültige Originalversion des Beschlusses und alle Versionen, die bisher zu dem Beschluss eingebracht wurden."
+msgstr "Auf der Detailseite finden Sie die momentan gültige Originalversion des Papiers und alle Versionen, die bisher zu dem Papier eingebracht wurden."
 
 msgid "No such text revision."
 msgstr "Diese Textversion existiert nicht."
 
 #, python-format
 msgid "Page %s does not allow comments"
-msgstr "Der Beschluss %s lässt keine Kommentare zu"
+msgstr "Das Papier %s lässt keine Kommentare zu"
 
 msgid "Cannot compare identical text revisions."
 msgstr "Identische Texte können nicht verglichen werden. "
 
 msgid "Cannot compare versions of different texts."
-msgstr "Texte von unterschiedlichen Beschlüssen können nicht verglichen werden. "
+msgstr "Texte von unterschiedlichen Papieren können nicht verglichen werden. "
 
 #, python-format
 msgid "The variant %s has been deleted."
@@ -413,7 +413,7 @@ msgid "Invalid text ID %s for this page/variant!"
 msgstr "Ungültige Text-ID %s für diese Seite oder diese Version!"
 
 msgid "This is not an adoption poll."
-msgstr "Dies ist keine Beschlussabstimmung."
+msgstr "Dies ist keine Papierabstimmung."
 
 msgid "This is not a rating poll."
 msgstr "Dies ist keine Bewertungsabstimmung."
@@ -428,7 +428,7 @@ msgid "tutorial_proposal_overview_tab"
 msgstr "Übersicht über alle bisher eingebrachten Vorschläge. Hier haben Sie nicht nur die Möglichkeit neue Vorschläge zu verfassen..."
 
 msgid "Please select norm and propose a change to it."
-msgstr "Bitte wählen Sie einen Beschluss aus und schlagen Sie eine Änderung vor."
+msgstr "Bitte wählen Sie ein Papier aus und schlagen Sie eine Änderung vor."
 
 msgid "tutorial_proposal_show_tab"
 msgstr "Auf der Detailseite eines Vorschlags finden Sie nicht nur die wichtigen Informationen, sondern auch viele Möglichkeiten sich aktiv zu beteiligen."
@@ -531,7 +531,7 @@ msgid "Optional"
 msgstr "Optional"
 
 msgid "tutorial_user_index_intro"
-msgstr "Mitgliederliste der Gruppe."
+msgstr "Mitgliederliste der Projektgruppe."
 
 msgid "Sorry, registration has been disabled by administrator."
 msgstr "Es tut uns leid - Registrierung ist in dieser Installation deaktiviert."
@@ -751,13 +751,13 @@ msgid ""
 msgstr "Bitte gib einen Farbcode wie '#f0f0f0' ein. '%(value)s' ist kein gültiger Farbcode."
 
 msgid "No instance key is given"
-msgstr "Keine Gruppen-Kennung angegeben."
+msgstr "Keine Projektgruppen-Kennung angegeben."
 
 msgid "The instance key is invalid"
-msgstr "Diese Gruppen-Kennung ist ungültig."
+msgstr "Diese Projektgruppen-Kennung ist ungültig."
 
 msgid "An instance with that key already exists"
-msgstr "Eine Gruppe mit dieser Kennung existiert bereits."
+msgstr "Eine Projektgruppe mit dieser Kennung existiert bereits."
 
 msgid "No static key is given"
 msgstr "Keine statische Kennung angegeben"
@@ -775,11 +775,11 @@ msgstr "Es gibt keinen Vorschlag mit der ID '%s'."
 
 #, python-format
 msgid "No group with ID '%s' exists"
-msgstr "Es gibt keine Gruppe mit der ID '%s'."
+msgstr "Es gibt keine Projektgruppe mit der ID '%s'."
 
 #, python-format
 msgid "Group '%s' is no instance group"
-msgstr "Gruppe '%s' ist keine Instanz-Gruppe."
+msgstr "Projektgruppe '%s' ist keine Instanz-Projektgruppe."
 
 msgid "At least one character is required"
 msgstr "Mindestens ein Zeichen wird benötigt"
@@ -806,14 +806,14 @@ msgstr "Duplikate bei der Eingabe von Userbadge labels"
 
 #, python-format
 msgid "Cannot use global category %s in this instance"
-msgstr "Die globale Kategorie %s kann in dieser Gruppe nicht verwendet werden."
+msgstr "Die globale Kategorie %s kann in dieser Projektgruppe nicht verwendet werden."
 
 #, python-format
 msgid "Badge with ID '%s' not valid in this instance"
-msgstr "Badge mit ID '%s' ist nicht gültig in dieser Gruppe."
+msgstr "Badge mit ID '%s' ist nicht gültig in dieser Projektgruppe."
 
 msgid "Parent and child category instance have to match"
-msgstr "Die Eltern- und Kindkategorie Gruppen müssen zusammenpassen"
+msgstr "Die Eltern- und Kindkategorie Projektgruppen müssen zusammenpassen"
 
 msgid "You shall not create cycles!"
 msgstr "Du sollst keine Zyklen anlegen!"
@@ -923,10 +923,10 @@ msgid "The file is too big (>1MB)"
 msgstr "Die Datei ist zu groß (>1MB)"
 
 msgid "Please select at least one instance"
-msgstr "Bitte wählen Sie zumindest eine Gruppe"
+msgstr "Bitte wählen Sie zumindest eine Projektgruppe"
 
 msgid "Disallowed instance selected"
-msgstr "Unerlaubte Gruppe ausgewählt"
+msgstr "Unerlaubte Projektgruppe ausgewählt"
 
 msgid "Invalid value"
 msgstr "Ungültiger Wert"
@@ -969,7 +969,7 @@ msgid ""
 "A liquid democracy platform for making decisions in distributed, open groups"
 " by cooperatively creating proposals and voting on them to establish their "
 "support."
-msgstr "Eine Liquid Democracy-Plattform, auf der verteilte, offene Gruppen kooperativ Vorschläge erarbeiten und abstimmen können."
+msgstr "Eine Liquid Democracy-Plattform, auf der verteilte, offene Projektgruppen kooperativ Vorschläge erarbeiten und abstimmen können."
 
 msgid ""
 "adhocracy, direct democracy, liquid democracy, liqd, democracy, wiki, "
@@ -1087,7 +1087,7 @@ msgid "Badge"
 msgstr "Badge"
 
 msgid "Instance hidden state"
-msgstr "Sichtbarkeitsstatus der Gruppe"
+msgstr "Sichtbarkeitsstatus der Projektgruppe"
 
 msgid "hidden"
 msgstr "versteckt"
@@ -1096,7 +1096,7 @@ msgid "visible"
 msgstr "sichtbar"
 
 msgid "Instance state"
-msgstr "Status der Gruppe"
+msgstr "Status der Projektgruppe"
 
 msgid "frozen"
 msgstr "eingefroren"
@@ -1231,19 +1231,19 @@ msgstr "Profil wurde von %(admin)s geändert"
 
 #, python-format
 msgid "New instance: %(instance)s"
-msgstr "Neue Gruppe: %(instance)s"
+msgstr "Neue Projektgruppe: %(instance)s"
 
 #, python-format
 msgid "founded the %(instance)s instance"
-msgstr "gründete die Gruppe %(instance)s"
+msgstr "gründete die Projektgruppe %(instance)s"
 
 #, python-format
 msgid "%(instance)s: instance was updated"
-msgstr "%(instance)s: Gruppe wurde aktualisiert"
+msgstr "%(instance)s: Projektgruppe wurde aktualisiert"
 
 #, python-format
 msgid "updated the %(instance)s instance"
-msgstr "änderte die Gruppe %(instance)s"
+msgstr "änderte die Projektgruppe %(instance)s"
 
 #, python-format
 msgid "Deleted Adhocracy: %(instance)s"
@@ -1251,7 +1251,7 @@ msgstr "Adhocracy gelöscht: %(instance)s"
 
 #, python-format
 msgid "deleted the %(instance)s instance"
-msgstr "löschte die Gruppe %(instance)s"
+msgstr "löschte die Projektgruppe %(instance)s"
 
 #, python-format
 msgid "%(instance)s: %(user)s joined"
@@ -1534,7 +1534,7 @@ msgid "Users"
 msgstr "Benutzer"
 
 msgid "This action is only available in an instance context."
-msgstr "Die Handlung ist nur innerhalb einer Gruppe verfügbar."
+msgstr "Die Handlung ist nur innerhalb einer Projektgruppe verfügbar."
 
 msgid "show more"
 msgstr "mehr anzeigen"
@@ -1564,7 +1564,7 @@ msgid "Topic is frozen. Click to view the list of votes."
 msgstr "Thema ist eingefroren. Klicken Sie hier für eine Übersicht über die abgegebenen Stimmen."
 
 msgid "Instance is frozen. Click to view the list of votes."
-msgstr "Die Gruppe ist eingefroren. Klicke hier für eine Übersicht über die abgegebenen Stimmen"
+msgstr "Die Projektgruppe ist eingefroren. Klicke hier für eine Übersicht über die abgegebenen Stimmen"
 
 msgid "Voting has ended. Click to view the list of votes"
 msgstr "Die Abstimmung ist beendet. Klicken Sie hier für eine Übersicht über die abgegebenen Stimmen"
@@ -1574,7 +1574,7 @@ msgstr "Bitte melden Sie sich an oder registrieren Sie sich, um abzustimmen"
 
 #, python-format
 msgid "Please join the instance \"%s\" to vote."
-msgstr "Bitte treten Sie der Gruppe \"%s\" bei, um abzustimmen."
+msgstr "Bitte treten Sie der Projektgruppe \"%s\" bei, um abzustimmen."
 
 msgid "Click to see the list of votes"
 msgstr "Klicken Sie hier für eine Übersicht über die abgegebenen Stimmen"
@@ -1583,7 +1583,7 @@ msgid "User badge"
 msgstr "Nutzerbadge"
 
 msgid "Instance badge"
-msgstr "Gruppenbadge"
+msgstr "Projektgruppenbadge"
 
 msgid "Proposal badge"
 msgstr "Vorschlagsbadge"
@@ -1627,10 +1627,10 @@ msgid "Notify me of updates."
 msgstr "Ich möchte über Neuigkeiten informiert werden."
 
 msgid "Follow Norm"
-msgstr "Beschluss folgen"
+msgstr "Papier folgen"
 
 msgid "Follow Instance"
-msgstr "Gruppe folgen"
+msgstr "Projektgruppe folgen"
 
 msgid "Follow Proposal"
 msgstr "Vorschlag folgen"
@@ -1727,7 +1727,7 @@ msgid "Start"
 msgstr "Start"
 
 msgid "Instances"
-msgstr "Gruppen"
+msgstr "Projektgruppen"
 
 msgid "Watchlist"
 msgstr "Beobachtungsliste"
@@ -1770,7 +1770,7 @@ msgid "Overview"
 msgstr "Übersicht"
 
 msgid "Norms"
-msgstr "Beschlüsse"
+msgstr "Papiere"
 
 msgid "Members"
 msgstr "Mitglieder"
@@ -1834,7 +1834,7 @@ msgid "Set Password"
 msgstr "Passwort setzen"
 
 msgid "Join this instance to start contributing."
-msgstr "Treten Sie dieser Gruppe bei, um mitzumachen."
+msgstr "Treten Sie dieser Projektgruppe bei, um mitzumachen."
 
 msgid "join"
 msgstr "beitreten"
@@ -1853,7 +1853,7 @@ msgid "Edit profile"
 msgstr "Profil editieren"
 
 msgid "This instance has been frozen - you can not edit or post anything."
-msgstr "Diese Gruppe ist eingefroren - Bearbeiten oder Hinzufügen von neuen Beiträgen ist nicht möglich."
+msgstr "Diese Projektgruppe ist eingefroren - Bearbeiten oder Hinzufügen von neuen Beiträgen ist nicht möglich."
 
 msgid "Register"
 msgstr "Registrieren"
@@ -1867,11 +1867,11 @@ msgstr "Melden Sie sich an, um an dieser Diskussion teilzunehmen."
 msgid ""
 "You need to set an email in your profile in order to contribute to this "
 "instance."
-msgstr "Sie müssen in Ihren Profileinstellungen eine Email-Adresse eintragen, um bei dieser Gruppe mitzumachen."
+msgstr "Sie müssen in Ihren Profileinstellungen eine Email-Adresse eintragen, um bei dieser Projektgruppe mitzumachen."
 
 msgid ""
 "Please validate your email address in order to contribute to this instance."
-msgstr "Bitte verifizieren Sie Ihre Email-Adresse, damit Sie bei dieser Gruppe mitmachen können."
+msgstr "Bitte verifizieren Sie Ihre Email-Adresse, damit Sie bei dieser Projektgruppe mitmachen können."
 
 msgid "Your registered email address is:"
 msgstr "Ihre eingestellte Email-Adresse ist:"
@@ -1941,7 +1941,7 @@ msgid "Export badges"
 msgstr "Badges exportieren"
 
 msgid "Export content (instances)"
-msgstr "Inhalte exportieren (Gruppen)"
+msgstr "Inhalte exportieren (Projektgruppen)"
 
 msgid "Include proposals"
 msgstr "Vorschläge hinzufügen"
@@ -1995,7 +1995,7 @@ msgid "Import badges"
 msgstr "Badges importieren"
 
 msgid "Import content (instances)"
-msgstr "Inhalte importieren (Gruppen)"
+msgstr "Inhalte importieren (Projektgruppen)"
 
 msgid "Import static pages"
 msgstr "Importiere statische Seiten"
@@ -2025,18 +2025,18 @@ msgid "back to main page"
 msgstr "Zurück zur Hauptseite"
 
 msgid "Admin: Group Permissions"
-msgstr "Verwaltung: Gruppenrechte"
+msgstr "Verwaltung: Projektgruppenrechte"
 
 msgid "Admin &raquo; Group Permissions"
-msgstr "Verwaltung &raquo; Gruppenrechte"
+msgstr "Verwaltung &raquo; Projektgruppenrechte"
 
 msgid "Group Permissions"
-msgstr "Gruppenrechte"
+msgstr "Projektgruppenrechte"
 
 msgid ""
 "WARNING: This allows you to shut yourself out of your adhocracy. Handle with"
 " care!"
-msgstr "ACHTUNG: Hiermit können Sie sich aus Ihrer eigenen Gruppe ausschließen. Seien Sie vorsichtig!"
+msgstr "ACHTUNG: Hiermit können Sie sich aus Ihrer eigenen Projektgruppe ausschließen. Seien Sie vorsichtig!"
 
 msgid "Permissions"
 msgstr "Rechte"
@@ -2119,7 +2119,7 @@ msgstr "Sie haben erfolgreich die folgenden Benutzer erstellt:"
 msgid ""
 "You successfully created the following users and added them as Members to "
 "the instance \"%s\":"
-msgstr "Sie haben erfolgreich die folgenden Benutzer erstellt und sie als Mitglieder der Gruppe \"%s\" hinzugefügt:"
+msgstr "Sie haben erfolgreich die folgenden Benutzer erstellt und sie als Mitglieder der Projektgruppe \"%s\" hinzugefügt:"
 
 msgid "The following errors happend while creating the users"
 msgstr "Die folgenden Fehler traten während der Erstellung der Benutzer auf"
@@ -2176,16 +2176,16 @@ msgstr "Keine Benutzerrolle"
 msgid ""
 "Automatically assign all users with this badge to the selected group for all"
 " instances in the adhocracy site."
-msgstr "Ordne alle Nutzer*innen mit diesem Badge automatisch der gewählten Gruppe zu, für alle Instanzen in Adhocracy."
+msgstr "Ordne alle Nutzer*innen mit diesem Badge automatisch der gewählten Projektgruppe zu, für alle Instanzen in Adhocracy."
 
 msgid "Automatically assign all users with this badge to the selected group."
-msgstr "Ordne alle Nutzer*innen mit diesem Badge automatisch der gewählten Gruppe zu."
+msgstr "Ordne alle Nutzer*innen mit diesem Badge automatisch der gewählten Projektgruppe zu."
 
 msgid "Display group in instances"
-msgstr "Nutzerrollen in den Gruppen anzeigen"
+msgstr "Nutzerrollen in den Projektgruppen anzeigen"
 
 msgid "Display this badge instead of the normal user group."
-msgstr "Zeige dieses Badge an, anstatt der normalen Gruppe des Nutzers."
+msgstr "Zeige dieses Badge an, anstatt der normalen Projektgruppe des Nutzers."
 
 msgid "Global"
 msgstr "Global"
@@ -2200,7 +2200,7 @@ msgid "Global categories"
 msgstr "Globale Kategorien"
 
 msgid "Local instance categories"
-msgstr "Lokale Gruppenkategorien"
+msgstr "Lokale Projektgruppenkategorien"
 
 msgid ""
 "Description to select children of this badge (irrelevant if this badge "
@@ -2262,7 +2262,7 @@ msgid "Proposal Thumbnail Badges"
 msgstr "Miniaturbild-Badges dieses Vorschlags"
 
 msgid "Instance Badges"
-msgstr "Gruppen-Badge"
+msgstr "Projektgruppen-Badge"
 
 msgid "Comment"
 msgstr "Kommentar"
@@ -2335,10 +2335,10 @@ msgid "Start new discussion"
 msgstr "Neue Diskussion anlegen"
 
 msgid "Join instance to comment."
-msgstr "Treten Sie dieser Gruppe bei, um mitzumachen."
+msgstr "Treten Sie dieser Projektgruppe bei, um mitzumachen."
 
 msgid "Join instance to discuss."
-msgstr "Treten Sie dieser Gruppe bei, um mitzumachen."
+msgstr "Treten Sie dieser Projektgruppe bei, um mitzumachen."
 
 msgid "Login to comment."
 msgstr "Loggen Sie sich ein um einen Kommentar hinzuzufügen."
@@ -2397,10 +2397,10 @@ msgid "Add argument"
 msgstr "Argument hinzufügen"
 
 msgid "Join instance to reply"
-msgstr "Gruppe beitreten um zu antworten"
+msgstr "Projektgruppe beitreten um zu antworten"
 
 msgid "Join instance to argue"
-msgstr "Treten Sie dieser Gruppe bei, um mitzumachen."
+msgstr "Treten Sie dieser Projektgruppe bei, um mitzumachen."
 
 msgid "Login to reply"
 msgstr "Anmelden, um zu antworten"
@@ -2583,7 +2583,7 @@ msgid "Latest Events"
 msgstr "Letzte Ereignisse."
 
 msgid "This is a record of all recent actions within this instance."
-msgstr "Dies ist eine Übersicht aller Aktivitäten in dieser Gruppe."
+msgstr "Dies ist eine Übersicht aller Aktivitäten in dieser Projektgruppe."
 
 msgid "You can also have notifications sent to you."
 msgstr "Sie können auch Benachrichtigungen erhalten."
@@ -2596,10 +2596,10 @@ msgid "Create a proposal to start debating in %(instance)s."
 msgstr "Legen Sie einen Vorschlag an, um in %(instance)s zu diskutieren."
 
 msgid "Delete instance"
-msgstr "Gruppe löschen"
+msgstr "Projektgruppe löschen"
 
 msgid "Are you sure you want to delete this instance?"
-msgstr "Sind Sie sicher, dass Sie diese Gruppe entfernen möchten?"
+msgstr "Sind Sie sicher, dass Sie diese Projektgruppe entfernen möchten?"
 
 msgid "Leave"
 msgstr "verlassen"
@@ -2607,7 +2607,7 @@ msgstr "verlassen"
 msgid ""
 "Are you sure you want to leave this instance? You will no longer be able to "
 "write contributions or to vote."
-msgstr "Sind Sie sicher, dass Sie diese Gruppe verlassen wollen? Sie werden keine Beiträge und Stimmen mehr abgeben können."
+msgstr "Sind Sie sicher, dass Sie diese Projektgruppe verlassen wollen? Sie werden keine Beiträge und Stimmen mehr abgeben können."
 
 #, python-format
 msgid "Edit badges for %s"
@@ -2620,32 +2620,32 @@ msgid "No Badges"
 msgstr "Keine Badges"
 
 msgid "Create new instance"
-msgstr "Neue Gruppe erstellen"
+msgstr "Neue Projektgruppe erstellen"
 
 msgid "Instances are little democracies that are ran by their community."
-msgstr "Übersichtsliste über alle registrierten Gruppen. Treten Sie einer Gruppe bei um aktiv an den Diskussionen teilzunehmen."
+msgstr "Übersichtsliste über alle registrierten Projektgruppen. Treten Sie einer Projektgruppe bei um aktiv an den Diskussionen teilzunehmen."
 
 msgid "new instance"
-msgstr "Neue Gruppe"
+msgstr "Neue Projektgruppe"
 
 msgid "New Instance"
-msgstr "Neue Gruppe"
+msgstr "Neue Projektgruppe"
 
 msgid "Instance name"
-msgstr "Name der Gruppe"
+msgstr "Name der Projektgruppe"
 
 msgid "Instance URL"
-msgstr "URL der Gruppe"
+msgstr "URL der Projektgruppe"
 
 msgid ""
 "The address may only contain alpha-numeric characters. Please note that this"
 " key cannot be changed after the instance has been created."
-msgstr "Die Adresse darf nur alphanumerische Zeichen enthalten. Bitte beachten Sie, dass die Adresse nicht mehr geändert werden kann, nachdem die Gruppe erstellt wurde."
+msgstr "Die Adresse darf nur alphanumerische Zeichen enthalten. Bitte beachten Sie, dass die Adresse nicht mehr geändert werden kann, nachdem die Projektgruppe erstellt wurde."
 
 msgid ""
 "Describe what the goals of this instance are and who constitutes its "
 "community."
-msgstr "Beschreiben Sie die Ziele dieser Gruppe und wer ihre Mitglieder sind."
+msgstr "Beschreiben Sie die Ziele dieser Projektgruppe und wer ihre Mitglieder sind."
 
 msgid "(Both Markdown and HTML are allowed here.)"
 msgstr "(Markdown und HTML sind hier erlaubt.)"
@@ -2658,7 +2658,7 @@ msgid "Manage"
 msgstr "Verwalten"
 
 msgid "Select a logo file to appear in the header area of this Instance."
-msgstr "Wählen Sie ein Logo für diese Gruppe."
+msgstr "Wählen Sie ein Logo für diese Projektgruppe."
 
 msgid "Logo"
 msgstr "Logo"
@@ -2673,7 +2673,7 @@ msgid "Extra CSS"
 msgstr "Extra CSS"
 
 msgid "You can add css that will be used to style the instance."
-msgstr "Sie können CSS-Regeln angeben, um das Aussehen der Gruppe zu verändern."
+msgstr "Sie können CSS-Regeln angeben, um das Aussehen der Projektgruppe zu verändern."
 
 msgid "Thumbnail badges width"
 msgstr "Miniaturbild-Badges Breite"
@@ -2682,19 +2682,19 @@ msgid "Thumbnail badges height"
 msgstr "Miniaturbild-Badges Höhe"
 
 msgid "Use Norms"
-msgstr "Beschlüsse verwenden"
+msgstr "Papiere verwenden"
 
 msgid "Allow users to propose norms"
-msgstr "Mitgliedern erlauben, neue Beschlüsse anzulegen"
+msgstr "Mitgliedern erlauben, neue Papiere anzulegen"
 
 msgid "Allow users to change norms from within proposals"
-msgstr "Nutzer*innen erlauben, Beschlüsse aus Vorschlägen heraus zu verändern"
+msgstr "Nutzer*innen erlauben, Papiere aus Vorschlägen heraus zu verändern"
 
 msgid "Require to propose a variant"
-msgstr "Vorschläge müssen mindestens eine Änderung an einem Beschluss einbringen"
+msgstr "Vorschläge müssen mindestens eine Änderung an einem Papier einbringen"
 
 msgid "Show norms navigation item"
-msgstr "Zeige \"Beschluss\"-Reiter"
+msgstr "Zeige \"Papier\"-Reiter"
 
 msgid "Show proposals navigation item"
 msgstr "Zeige \"Vorschlag\"-Reiter"
@@ -2715,7 +2715,7 @@ msgid "Allow editing of proposals by default"
 msgstr "Erlaube Bearbeiten von Vorschlägen standardmäßig"
 
 msgid "Freeze this instance"
-msgstr "Die Arbeit in dieser Gruppe einfrieren"
+msgstr "Die Arbeit in dieser Projektgruppe einfrieren"
 
 msgid "Name"
 msgstr "Name"
@@ -2731,19 +2731,19 @@ msgid "Default group"
 msgstr "Nutzerrolle für neue Mitglieder"
 
 msgid "Hide this instance"
-msgstr "Diese Gruppe verbergen"
+msgstr "Diese Projektgruppe verbergen"
 
 msgid "Select whether this instance will be shown in public listings."
-msgstr "Bitte wählen Sie aus, ob diese Gruppe öffentlich gemacht werden soll."
+msgstr "Bitte wählen Sie aus, ob diese Projektgruppe öffentlich gemacht werden soll."
 
 msgid "Require email validation"
 msgstr "Setze Email-Verifikation voraus"
 
 msgid "Require instance members to validate their email address."
-msgstr "Setze Verifikation der Email-Adressen der Gruppenmitglieder voraus."
+msgstr "Setze Verifikation der Email-Adressen der Projektgruppenmitglieder voraus."
 
 msgid "This instance is authenticated"
-msgstr "Diese Gruppe ist „authentifiziert“"
+msgstr "Diese Projektgruppe ist „authentifiziert“"
 
 msgid "Enable (final) adoption voting"
 msgstr "Endgültige Verabschiedung zulassen"
@@ -2769,7 +2769,7 @@ msgid "Display how the users with the selected badges feel about the issue."
 msgstr "Die Meinung der Benutzer zu diesem Thema anzeigen, welche die ausgewählten Badges besitzen."
 
 msgid "Home"
-msgstr "Gruppe"
+msgstr "Projektgruppe"
 
 msgid "Introduce a new idea to debate."
 msgstr "Schlagen Sie eine neue Idee vor."
@@ -2778,7 +2778,7 @@ msgid "new proposal"
 msgstr "Neuer Vorschlag"
 
 msgid "Join instance to create a new proposal."
-msgstr "Gruppe beitreten, um einen neuen Vorschlag anzulegen."
+msgstr "Projektgruppe beitreten, um einen neuen Vorschlag anzulegen."
 
 msgid "Login to create a new proposal."
 msgstr "Anmelden, um einen neuen Vorschlag anzulegen."
@@ -2828,7 +2828,7 @@ msgid "Close"
 msgstr "Schließen"
 
 msgid "tutorial_instance_numbers"
-msgstr "Hier finden Sie noch eine kurze Information über die aktuelle Mitgliederzahl der Gruppe, der Anzahl der eingebrachten Vorschläge und der geschriebenen Argumente."
+msgstr "Hier finden Sie noch eine kurze Information über die aktuelle Mitgliederzahl der Projektgruppe, der Anzahl der eingebrachten Vorschläge und der geschriebenen Argumente."
 
 #, python-format
 msgid "%s proposal"
@@ -2839,8 +2839,8 @@ msgstr[1] "%s Vorschläge"
 #, python-format
 msgid "%s norm"
 msgid_plural "%s norms"
-msgstr[0] "%s Beschluss"
-msgstr[1] "%s Beschlüsse"
+msgstr[0] "%s Papier"
+msgstr[1] "%s Papiere"
 
 #, python-format
 msgid ""
@@ -2860,7 +2860,7 @@ msgid "Filter users ..."
 msgstr "Benutzer filtern ..."
 
 msgid "... by instance:"
-msgstr ".. nach Gruppe:"
+msgstr ".. nach Projektgruppe:"
 
 msgid "... by badge:"
 msgstr ".. nach Badge:"
@@ -2999,10 +2999,10 @@ msgid "No proposals are connected to this milestone"
 msgstr "Mit diesem Termin sind keine Vorschläge verknüpft"
 
 msgid "Associated Norms"
-msgstr "Verknüpfte Beschlüsse"
+msgstr "Verknüpfte Papiere"
 
 msgid "No norms are connected to this milestone"
-msgstr "Mit diesem Termin sind keine Beschlüsse verknüpft"
+msgstr "Mit diesem Termin sind keine Papiere verknüpft"
 
 msgid "tutorial_milestone_details_follow"
 msgstr "Ist der Termin wichtig für Sie, können Sie ihn auch Ihrer Beobachtungsliste hinzufügen."
@@ -3011,7 +3011,7 @@ msgid "tutorial_milestone_details_description"
 msgstr "Und Informationen über das Ziel bzw. den Zweck des Termins einsehen – ob es sich z.B. um ein Treffen einer Arbeitsgruppe, oder um eine Abstimmung handelt."
 
 msgid "tutorial_milestone_details_listing"
-msgstr "Hier finden Sie eine Liste aller Vorschläge und Beschlüsse, die für den Termin relevant sind.“"
+msgstr "Hier finden Sie eine Liste aller Vorschläge und Papiere, die für den Termin relevant sind.“"
 
 msgid "See more"
 msgstr "Mehr erfahren"
@@ -3107,7 +3107,7 @@ msgstr "Abschnitt bearbeiten"
 
 #, python-format
 msgid "Norm: %s"
-msgstr "Beschluss: %s"
+msgstr "Papier: %s"
 
 msgid "Variant Name"
 msgstr "Name der Version"
@@ -3137,19 +3137,19 @@ msgid "Popular tags"
 msgstr "Beliebte Tags"
 
 msgid "Create new norm"
-msgstr "Einen neuen Beschluss anlegen"
+msgstr "Ein neues Papier anlegen"
 
 msgid "Create a new norm."
-msgstr "Einen neuen Beschluss anlegen."
+msgstr "Ein neues Papier anlegen."
 
 msgid "new norm"
-msgstr "neuer Beschluss"
+msgstr "neues Papier"
 
 msgid "tutorial_norms_overview_table"
-msgstr "Die Liste zeigt nicht nur alle von der Gruppe eingebrachten Beschlüsse. Unter dem Titel der Beschlüsse wird auch die Anzahl der momentan dazugehörigen Vorschläge und Argumente angezeigt."
+msgstr "Die Liste zeigt nicht nur alle von der Projektgruppe eingebrachten Papiere. Unter dem Titel der Papiere wird auch die Anzahl der momentan dazugehörigen Vorschläge und Argumente angezeigt."
 
 msgid "tutorial_norms_overview_facets"
-msgstr "Für eine bessere Übersicht können Sie die Auswahl der Beschlüsse nach Schlagworten filtern."
+msgstr "Für eine bessere Übersicht können Sie die Auswahl der Papiere nach Schlagworten filtern."
 
 msgid "New page"
 msgstr "Neue Seite"
@@ -3159,25 +3159,25 @@ msgid "Add section to %s"
 msgstr "Abschnitt zu %s hinzufügen"
 
 msgid "Create norm"
-msgstr "Einen neuen Beschluss anlegen."
+msgstr "Ein neues Papier anlegen."
 
 msgid "Norm title"
-msgstr "Titel des Beschlusses"
+msgstr "Titel des Papiers"
 
 msgid "New norm"
-msgstr "Neuer Beschluss"
+msgstr "Neues Papier"
 
 msgid "Section content"
 msgstr "Inhalt des Abschnitts"
 
 msgid "Norm content"
-msgstr "Inhalt des Beschlusses"
+msgstr "Inhalt des Papiers"
 
 msgid "Tag and classify"
 msgstr "Tags und Eigenschaften"
 
 msgid "The new norm will be categorized under the specified parent theme."
-msgstr "Der neue Beschluss wird unter dem angegebenen Elternbeschluss  eingeordnet."
+msgstr "Das neue Papier wird unter dem angegebenen Elternbeschluss  eingeordnet."
 
 msgid "Highlight Changes"
 msgstr "Änderungen hervorheben"
@@ -3192,17 +3192,17 @@ msgid "Propose New Amendment"
 msgstr "Neue Änderung vorschlagen"
 
 msgid "Information about the norm"
-msgstr "Informationen über den Beschluss"
+msgstr "Informationen über den Papier"
 
 msgid "Last Activity"
 msgstr "Letzte Aktivität"
 
 msgid "This page is not assigned to any category"
-msgstr "Dieser Beschluss ist keiner Kategorie zugewiesen"
+msgstr "Dieses Papier ist keiner Kategorie zugewiesen"
 
 #, python-format
 msgid "This norm relates to the milestone %s."
-msgstr "Dieser Beschluss bezieht sich auf den Termin %s."
+msgstr "Dieses Papier bezieht sich auf den Termin %s."
 
 msgid "Subnorms"
 msgstr "Unterbeschlüsse"
@@ -3231,13 +3231,13 @@ msgid "Proposal"
 msgstr "Vorschlag"
 
 msgid "tutorial_norm_show_vote"
-msgstr "Bewerten Sie die Original- und die eingebrachten Versionen eines Beschlusses, indem Sie über die Pfeile Ihre Zustimmung (hoch) oder Ablehnung (runter) ausdrücken. Sie können dabei auch mehreren Versionen zustimmen oder diese ablehnen."
+msgstr "Bewerten Sie die Original- und die eingebrachten Versionen eines Papiers, indem Sie über die Pfeile Ihre Zustimmung (hoch) oder Ablehnung (runter) ausdrücken. Sie können dabei auch mehreren Versionen zustimmen oder diese ablehnen."
 
 msgid "tutorial_norm_show_diff"
 msgstr "Wählen Sie, ob Änderungen im Vergleich zur Originalversion hervorgehoben werden sollen."
 
 msgid "tutorial_norm_show_new"
-msgstr "Sie können hier auch eine neue Version des Beschlusses einbringen."
+msgstr "Sie können hier auch eine neue Version des Papiers einbringen."
 
 msgid "Comments"
 msgstr "Kommentare"
@@ -3252,7 +3252,7 @@ msgid "Add section"
 msgstr "Abschnitt hinzufügen"
 
 msgid "This norm has been split into several sections."
-msgstr "Dieser Beschluss ist in mehrere Abschnitte aufgeteilt worden."
+msgstr "Dieses Papier ist in mehrere Abschnitte aufgeteilt worden."
 
 msgid ""
 "You can propose amendments and comment each section individually by using "
@@ -3396,7 +3396,7 @@ msgid "Propose new Variant"
 msgstr "Neue Version anlegen"
 
 msgid "Join instance to propose a new variant."
-msgstr "Gruppe beitreten, um eine Änderung einzubringen."
+msgstr "Projektgruppe beitreten, um eine Änderung einzubringen."
 
 msgid "Login to propose a new variant."
 msgstr "Anmelden, um eine Änderung einzubringen."
@@ -3481,17 +3481,17 @@ msgid "Proposed changes"
 msgstr "Vorgeschlagene Änderungen"
 
 msgid "Change norms with this proposal"
-msgstr "Ändere Beschlüsse mit diesem Vorschlag"
+msgstr "Ändere Papiere mit diesem Vorschlag"
 
 msgid ""
 "Proposals are implemented by including changes towards new or existing norm."
 " Norms are fixed documents that represent the consensus of this instance and"
 " can only be changed through a vote. Amend the proposal to change or create "
 "a norm."
-msgstr "Vorschläge enthalten Änderungen, die sich auf neue oder bereits existierende Beschlüsse beziehen. Beschlüsse sind Dokumente, welche die beschlossene und derzeitige Arbeitsgrundlage der Gruppe beschreiben und die durch eine Abstimmung verändert werden können. Ergänzen Sie den Vorschlag, um einen Beschluss zu bearbeiten oder zu erstellen."
+msgstr "Vorschläge enthalten Änderungen, die sich auf neue oder bereits existierende Papiere beziehen. Papiere sind Dokumente, welche die beschlossene und derzeitige Arbeitsgrundlage der Projektgruppe beschreiben und die durch eine Abstimmung verändert werden können. Ergänzen Sie den Vorschlag, um ein Papier zu bearbeiten oder zu erstellen."
 
 msgid "Select a norm to change:"
-msgstr "Wählen Sie einen Beschluss aus, den Sie ändern wollen:"
+msgstr "Wählen Sie ein Papier aus, das Sie ändern wollen:"
 
 msgid "Multiple tags can be separated by commas."
 msgstr "Mehrere Tags können durch Kommas oder Leerzeichen getrennt werden."
@@ -3514,16 +3514,16 @@ msgid "Proposed Implementations"
 msgstr "Versionen"
 
 msgid "Propose to change a norm"
-msgstr "Änderung eines Beschlusses vorschlagen"
+msgstr "Änderung eines Papiers vorschlagen"
 
 msgid "Login to propose to change a norm"
-msgstr "Anmelden, um eine Änderung eines Beschlusses vorzuschlagen."
+msgstr "Anmelden, um eine Änderung eines Papiers vorzuschlagen."
 
 msgid "Join instance to propose to change a norm"
-msgstr "Gruppe beitreten, um die Änderung eines Beschlusses vorzuschlagen."
+msgstr "Projektgruppe beitreten, um die Änderung eines Papiers vorzuschlagen."
 
 msgid "Validate email in order to propose to change a norm"
-msgstr "Verifizieren Sie Ihre Email-Adresse, um eine Änderung eines Beschlusses vorzuschlagen."
+msgstr "Verifizieren Sie Ihre Email-Adresse, um eine Änderung eines Papiers vorzuschlagen."
 
 msgid "tutorial_proposal_show_vote"
 msgstr "Sie können einen Vorschlag unterstützen oder ablehnen."
@@ -3619,7 +3619,7 @@ msgid "Search in %s"
 msgstr "In %s suchen"
 
 msgid "Search includes issues and proposals."
-msgstr "Die Suche umfasst Beschlüsse und Vorschläge."
+msgstr "Die Suche umfasst Papiere und Vorschläge."
 
 msgid "You did not provide a search query."
 msgstr "Bitte geben Sie einen Suchbegriff ein"
@@ -3630,59 +3630,59 @@ msgstr "Löschen: Umsetzung von %s"
 
 #, python-format
 msgid "Are you sure you want to delete the norm %s from this proposal?"
-msgstr "Sind Sie sicher, dass Sie den Beschluss %s aus diesem Vorschlag entfernen wollen?"
+msgstr "Sind Sie sicher, dass Sie den Papier %s aus diesem Vorschlag entfernen wollen?"
 
 #, python-format
 msgid "Implementation: %s"
 msgstr "Umsetzung: %s"
 
 msgid "Change an existing norm"
-msgstr "Ändern Sie einen bestehenden Beschluss"
+msgstr "Ändern Sie einen bestehenden Papier"
 
 msgid ""
 "Select a norm that you want to relate to. You can later propose a variant of"
 " this norm to effect a change."
-msgstr "Wählen Sie einen Beschluss aus, auf den Sie sich beziehen. Sie können später eine eigene Version dieses Beschlusses vorschlagen, um ihn zu ändern."
+msgstr "Wählen Sie ein Papier aus, auf das Sie sich beziehen. Sie können später eine eigene Version dieses Papiers vorschlagen, um es zu ändern."
 
 msgid "Include"
 msgstr "Aufnehmen"
 
 msgid "Can't find an appropriate norm?"
-msgstr "Können Sie keinen passenden Beschluss finden?"
+msgstr "Können Sie keinen passenden Papier finden?"
 
 msgid "Create a new norm instead"
-msgstr "Stattdessen einen Beschluss anlegen"
+msgstr "Stattdessen ein Papier anlegen"
 
 msgid "Propose a new norm"
-msgstr "Einen neuen Beschluss anlegen"
+msgstr "Ein neues Papier anlegen"
 
 msgid ""
 "Create a new norm that you want to relate to. The norm will be created "
 "without any status quo. You can then add a text variant of that norm, "
 "specifying the change you want to implement."
-msgstr "Erstellen Sie einen neuen Beschluss, auf den Sie sich beziehen wollen. Sie können dann eine Textvariante dieses Beschlusses hinzufügen, das die von Ihnen gewünschten Änderungen darstellt."
+msgstr "Erstellen Sie ein neues Papier, auf das Sie sich beziehen wollen. Sie können dann eine Textvariante dieses Papiers hinzufügen, das die von Ihnen gewünschten Änderungen darstellt."
 
 msgid "New norm title"
-msgstr "Neuer Titel des Beschlusses"
+msgstr "Neuer Titel des Papiers"
 
 msgid "The new norm will be categorized under the specified parent page."
-msgstr "Der neue Beschluss wird unter der angegebenen Elternseite eingeordnet."
+msgstr "Das neue Papier wird unter der angegebenen Elternseite eingeordnet."
 
 msgid "Have you checked for exisiting norms?"
-msgstr "Haben Sie nachgeschaut, ob ein ähnlicher Beschluss eventuell bereits besteht?"
+msgstr "Haben Sie nachgeschaut, ob ein ähnliches Papier eventuell bereits besteht?"
 
 msgid "Include an existing norm instead"
-msgstr "Stattdessen einen vorhandenen Beschluss einfügen"
+msgstr "Stattdessen ein vorhandenes Papier einfügen"
 
 msgid "Show Norm"
-msgstr "Beschluss anzeigen"
+msgstr "Papier anzeigen"
 
 msgid "There is a tie between variants, thus none is included at the moment."
 msgstr "Mehrere Versionen haben die gleiche Unterstützung, daher wird aktuell keine eingebunden."
 
 msgid ""
 "Status quo has the most votes, resulting in no proposed change to this norm."
-msgstr "Die Originalversion hat die meisten Stimmen, daher wird keine Änderung des Beschlusses angestrebt."
+msgstr "Die Originalversion hat die meisten Stimmen, daher wird keine Änderung des Papiers angestrebt."
 
 msgid "Proposed by"
 msgstr "Vorgeschlagen von"
@@ -3694,7 +3694,7 @@ msgid "Oppose this variant"
 msgstr "Diese Version ablehnen"
 
 msgid "(this proposal should not change this norm)"
-msgstr "(dieser Vorschlag soll diesen Beschluss nicht ändern)"
+msgstr "(dieser Vorschlag soll dieses Papier nicht ändern)"
 
 msgid "Currently selected for inclusion in this proposal"
 msgstr "Aktuell zur Einbindung in diesen Vorschlag ausgewählt"
@@ -3762,7 +3762,7 @@ msgstr "Seite bearbeiten"
 
 msgid ""
 "Tags are keywords used to find, sort and filter proposals and documents."
-msgstr "Tags sind Stichwörter, die helfen, Vorschläge und Beschlüsse zu finden, zu sortieren und zu filtern."
+msgstr "Tags sind Stichwörter, die helfen, Vorschläge und Papiere zu finden, zu sortieren und zu filtern."
 
 msgid "Similar tags"
 msgstr "Ähnliche Tags"
@@ -3805,7 +3805,7 @@ msgstr "Diese Version hat keinen Text."
 msgid ""
 "This norm has not yet been decided and is thus no official position of this "
 "group."
-msgstr "Ihre Gruppe hat zu diesem Beschluss noch keine Regelung getroffen. "
+msgstr "Ihre Projektgruppe hat zu diesem Papier noch keine Regelung getroffen. "
 
 #, python-format
 msgid "discuss (%s comments) &raquo;"
@@ -3865,7 +3865,7 @@ msgid "All Members on this Adhocracy Server"
 msgstr "Alle Benutzer auf diesem Adhocracy-Server"
 
 msgid "A listing of all users in all instance an this adhocracy server."
-msgstr "Eine Liste aller Benutzer in dieser Gruppe und auf diesem Adhocracy-Server."
+msgstr "Eine Liste aller Benutzer in dieser Projektgruppe und auf diesem Adhocracy-Server."
 
 msgid ""
 "Are you sure you want to delete your profile? This step cannot be reversed."
@@ -3886,7 +3886,7 @@ msgid "Example:"
 msgstr "Beispiel:"
 
 msgid "Badges in instance"
-msgstr "Badges in der Gruppe"
+msgstr "Badges in der Projektgruppe"
 
 msgid "Topic"
 msgstr "Thema"
@@ -3904,7 +3904,7 @@ msgid "Find users"
 msgstr "Benutzer suchen"
 
 msgid "tutorial_user_index_table"
-msgstr "Die Liste zeigt Ihnen alle Mitglieder der Gruppe an. Sie können die Liste sortieren."
+msgstr "Die Liste zeigt Ihnen alle Mitglieder der Projektgruppe an. Sie können die Liste sortieren."
 
 msgid "tutorial_user_index_facets"
 msgstr "Oder filtern Sie die Liste nach Nutzergruppen."
@@ -3918,7 +3918,7 @@ msgstr "Adhocracies"
 
 #, python-format
 msgid "%s is a member in these Adhocracies"
-msgstr "%s ist Mitglied in den folgenden Gruppen"
+msgstr "%s ist Mitglied in den folgenden Projektgruppen"
 
 msgid "Who are you, then?"
 msgstr "Und wer sind Sie? "
@@ -4105,7 +4105,7 @@ msgid "News service"
 msgstr "Nachrichtendienst"
 
 msgid "Receive occasional news from instance administrators"
-msgstr "Gelegentlich Neuigkeiten von den Gruppen-Administratoren empfangen"
+msgstr "Gelegentlich Neuigkeiten von den Projektgruppen-Administratoren empfangen"
 
 msgid "Optional attributes"
 msgstr "Optionale Attribute"
@@ -4142,13 +4142,13 @@ msgid "Activity in"
 msgstr "Aktivität in"
 
 msgid "All instances"
-msgstr "Alle Gruppen"
+msgstr "Alle Projektgruppen"
 
 msgid "Delete this user."
 msgstr "Benutzer löschen"
 
 msgid "Resign from this instance."
-msgstr "Die Gruppe verlassen."
+msgstr "Die Projektgruppe verlassen."
 
 msgid "leave"
 msgstr "verlassen"
@@ -4189,7 +4189,7 @@ msgid "None"
 msgstr "Keine"
 
 msgid "change group"
-msgstr "Gruppe ändern"
+msgstr "Projektgruppe ändern"
 
 msgid "User badges"
 msgstr "Nutzerbadges"
@@ -4198,10 +4198,10 @@ msgid "Most recent activity"
 msgstr "Letzte Aktivität"
 
 msgid "Member in the following instances"
-msgstr "Mitglied in folgenden Gruppen"
+msgstr "Mitglied in folgenden Projektgruppen"
 
 msgid "Member in other instances"
-msgstr "Mitglied in anderen Gruppen"
+msgstr "Mitglied in anderen Projektgruppen"
 
 msgid "Contact"
 msgstr "Kontakt"
@@ -4227,4 +4227,4 @@ msgstr "Beobachtungsliste: %s"
 msgid ""
 "This is your watchlist. You will receive notifications for events concerning"
 " each of these items."
-msgstr "Dies ist Ihre Beobachtungsliste. Sie erhalten eine Benachrichtigung bei Ereignissen in diesen Gruppen."
+msgstr "Dies ist Ihre Beobachtungsliste. Sie erhalten eine Benachrichtigung bei Ereignissen in diesen Projektgruppen."
