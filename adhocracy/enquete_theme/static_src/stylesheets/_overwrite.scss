@@ -198,7 +198,7 @@ label.armhint {
 #footer .page_wrapper {
     background: #445052 url('/static_theme/index_files/footer_hintergrund.gif') top left repeat-x;
     color: #fff;
-    padding-bottom: 0;
+    padding-bottom: 1em;
 }
 #second_footer_line,
 #footer_line {
@@ -215,6 +215,9 @@ label.armhint {
 }
 .footer_content a:hover {
     text-decoration: underline;
+}
+.footer_content {
+    border: none;
 }
 
 /* Menu in the right column */
