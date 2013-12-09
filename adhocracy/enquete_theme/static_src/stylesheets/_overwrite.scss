@@ -18,63 +18,6 @@ input[type=text], input[type=password], textarea {
     font-family: Arial,san-serif;
 }
 
-/*Header*/
-#header {
-    background: none;
-}
-
-#logo, body.logged_in #logo {
-    position: absolute;
-    margin: 29px 0 0 -23px;
-    height: 79px;
-}
-
-#topnav .follow {
-    display:none;
-}
-
-#nav {
-    height:auto;
-    padding-top: 0;
-    font-weight: normal;
-}
-body.logged_in #nav li a,
-body.logged_in #nav li,
-#nav li a,
-#nav li {
-    height: 24px;
-    padding-top: 2px;
-    padding-bottom: 3px;
-}
-#nav li.current {
-    background: url("/static_theme/index_files/gradient_navi_highlight.jpg") repeat-x scroll right bottom transparent;
-}
-#header .page_margins {
-    margin-top: 15px;
-    height: 106px;
-}
-#header .page_wrapper{
-    height: 29px;
-    background: url('/static_theme/index_files/header_bg_gradient.png') top repeat-x transparent;
-}
-#about_menu {
-    display: inline-block;
-}
-body.logged_in #about_menu li a,
-#about_menu li a,
-#about_menu ul {
-    margin:0;
-    padding-bottom: 0;
-}
-#about_menu ul.children li {
-    background: url('/images/line_navi_dropdown.jpg') repeat-x top center;
-    padding: 10px 2px 2px;
-    font-size: 14px;
-    line-height: 14px;
-    height: 45px;
-    display: block;
-}
-
 /*Content section*/
 #footer,
 #flash_message,

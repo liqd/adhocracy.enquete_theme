@@ -1,0 +1,144 @@
+#header {
+    background: none;
+}
+#header .page_wrapper {
+    position: relative;
+    padding: 0 23px;
+    height: 106px;
+    overflow: visible; /*allow long popup menu */
+    background: url('/static_theme/index_files/header_bg_gradient.png') top repeat-x $header-color;
+}
+#logo {
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    margin: 29px 0 0 -23px;
+    height: 79px;
+}
+
+
+/* top navigation */
+#header #topnav {
+    right: 30px;
+    top: 0px;
+}
+#topnav {
+    font-size: 11px;
+    color: #969ba2;
+
+    a {
+        color: #969ba2;
+        text-decoration: none;
+        &:hover, &:focus {
+            text-decoration: underline;
+        }
+    }
+}
+.language_switch {
+    padding: 0 10px;
+}
+
+/* navigation */
+#nav {
+    clear: none;
+    text-align: right;
+    font-size: 15px;
+    color: #fff;
+
+    .hlist > ul > li {
+        margin: 0 0 0 1px;
+        position: relative;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+        }
+
+        > a {
+            padding: 0 13px 0 10px;
+            line-height: 29px;
+            height: 29px;
+        }
+
+        &.current {
+            background: url("/static_theme/index_files/gradient_navi_highlight.jpg") repeat-x scroll right bottom $header-color2;
+
+            > a {
+                color: #c1c4c9;
+            }
+        }
+        // FIXME not accessible
+        &:hover {
+            background-color: lighten($header-color2, 4%);
+            @include background-image(linear-gradient(to bottom, lighten($header-color2, 5%), $header-color2));
+        }
+    }
+}
+
+#user_menu {
+    display: inline-block;
+    border-left: 1px solid $header-color2;
+}
+
+// FIXME not accessible
+#nav li:hover ul.children {
+    display: block;
+}
+#nav ul.children {
+    display: none;
+    position: absolute;
+    background-color: $header-color2;
+    margin: 0px;
+    min-width: 200px;
+    text-align: left;
+    padding: 20px;
+    right: 0px;
+    z-index: 100;
+    font-size: 14px;
+
+    li {
+        padding: 4px 2px 2px;
+        font-size: 14px;
+        line-height: 25px;
+        display: block;
+
+        border-bottom: 1px solid darken($header-color2, 10%);
+        border-top: 1px solid lighten($header-color2, 10%);
+
+        &:first-child {
+            border-top: none;
+        }
+        &:last-child {
+            border-bottom: none;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+            height: auto;
+            padding: 0;
+        }
+        a:hover, a:focus, &.current a {
+            color: #c1c4c9;
+        }
+    }
+
+    ul.children {
+        position: initial;
+        padding: 0 0 0 20px;
+    }
+}
+
+a.show_me {
+    background-position: right -350px;
+    padding-right: 23px;
+
+    #topnav & {
+        background-position: right -352px;
+    }
+    #user_menu & {
+        background-position: right -348px;
+        padding: 0 23px 0 18px !important;
+        line-height: 1.5em;
+    }
+}
