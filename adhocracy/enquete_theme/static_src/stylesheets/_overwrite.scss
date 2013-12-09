@@ -18,6 +18,10 @@ html.overlay body {
 #main {
     background: transparent;
 }
+#welcome_message .page_wrapper {
+    overflow: hidden;  // clearfix
+    background: white;
+}
 
 #flash_message .page_wrapper {
     background: #FFFDE4;
