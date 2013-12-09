@@ -47,23 +47,21 @@ input[type=text], input[type=password], textarea {
     padding-left: 4px;
 }
 
-
 #organisation_logo {
     padding-top: 19px;
 }
 
+// give #main white background (including margins)
 #main {
     margin: 0;
-}
 
-#main .page_margins {
-    border-collapse:collapse;
+    .page_wrapper {
+        background-color: white;
+        padding: 1em 0 3em;
+    }
 }
-#main .page_wrapper {
-    padding: 40px 0 60px;
-    background-color: #fff;
-    float: left;
-    width: 1004px;
+html.overlay #main .page_wrapper {
+    padding: 0;
 }
 
 /*Tabs onboarding aboutpage*/
