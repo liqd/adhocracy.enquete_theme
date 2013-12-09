@@ -4,18 +4,8 @@
 body {
     background: #fff url(/static_theme/index_files/body_bg.jpg);
 }
-h1, h2, h3, h4, h5, h6, h7 {
-/*font-family: Arial, Times New Roman,Times,serif;*/
-}
-h1 {
-    margin: 0;
-    padding: 27px 23px;
-}
-p {
-    margin-bottom: 12px;
-}
-input[type=text], input[type=password], textarea {
-    font-family: Arial,san-serif;
+html.overlay body {
+    background: none;
 }
 
 /*Content section*/
