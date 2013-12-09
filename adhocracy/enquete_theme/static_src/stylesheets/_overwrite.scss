@@ -2,77 +2,77 @@
 
 /*Body*/
 body {
-  background: #fff url(/static_theme/index_files/body_bg.jpg);
+    background: #fff url(/static_theme/index_files/body_bg.jpg);
 }
 h1, h2, h3, h4, h5, h6, h7 {
 /*font-family: Arial, Times New Roman,Times,serif;*/
 }
 h1 {
-  margin: 0;
-  padding: 27px 23px;
+    margin: 0;
+    padding: 27px 23px;
 }
 p {
-  margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 input[type=text], input[type=password], textarea {
-  font-family: Arial,san-serif;
+    font-family: Arial,san-serif;
 }
 
 /*Header*/
 #header {
-  background: none;
+    background: none;
 }
 
 #logo, body.logged_in #logo {
-  position: absolute;
-  margin: 29px 0 0 -23px;
-  height: 79px;
+    position: absolute;
+    margin: 29px 0 0 -23px;
+    height: 79px;
 }
 
 #topnav .follow {
-  display:none;
+    display:none;
 }
 
 #nav {
-  height:auto;
-  padding-top: 0;
-  font-weight: normal;
+    height:auto;
+    padding-top: 0;
+    font-weight: normal;
 }
 body.logged_in #nav li a,
 body.logged_in #nav li,
 #nav li a,
 #nav li {
-  height: 24px;
-  padding-top: 2px;
-  padding-bottom: 3px;
+    height: 24px;
+    padding-top: 2px;
+    padding-bottom: 3px;
 }
 #nav li.current {
-background: url("/static_theme/index_files/gradient_navi_highlight.jpg") repeat-x scroll right bottom transparent;
+    background: url("/static_theme/index_files/gradient_navi_highlight.jpg") repeat-x scroll right bottom transparent;
 }
 #header .page_margins {
-  margin-top: 15px;
-  height: 106px;
+    margin-top: 15px;
+    height: 106px;
 }
 #header .page_wrapper{
-  height: 29px;
-  background: url('/static_theme/index_files/header_bg_gradient.png') top repeat-x transparent;
+    height: 29px;
+    background: url('/static_theme/index_files/header_bg_gradient.png') top repeat-x transparent;
 }
 #about_menu {
-  display: inline-block;
+    display: inline-block;
 }
 body.logged_in #about_menu li a,
 #about_menu li a,
 #about_menu ul {
-  margin:0;
-  padding-bottom: 0;
+    margin:0;
+    padding-bottom: 0;
 }
 #about_menu ul.children li {
-  background: url('/images/line_navi_dropdown.jpg') repeat-x top center;
-  padding: 10px 2px 2px;
-  font-size: 14px;
-  line-height: 14px;
-  height: 45px;
-  display: block;
+    background: url('/images/line_navi_dropdown.jpg') repeat-x top center;
+    padding: 10px 2px 2px;
+    font-size: 14px;
+    line-height: 14px;
+    height: 45px;
+    display: block;
 }
 
 /*Content section*/
@@ -81,192 +81,192 @@ body.logged_in #about_menu li a,
 #subheader,
 #welcome_message,
 #main {
-  background: transparent;
+    background: transparent;
 }
 
 #flash_message .page_wrapper {
-  background: #FFFDE4;
+    background: #FFFDE4;
 }
 #subheader {
-  padding-top: 0;
-  margin-bottom: 0;
-  max-height: initial;
+    padding-top: 0;
+    margin-bottom: 0;
+    max-height: initial;
 }
 #subheader .page_wrapper {
-  background: url('/static_theme/index_files/white-50.png') repeat bottom center;
-  /* padding-top: 27px;*/
-  height: 93px;
+    background: url('/static_theme/index_files/white-50.png') repeat bottom center;
+    /* padding-top: 27px;*/
+    height: 93px;
 }
 
 #subheader.logo .page_wrapper {
-  height: 100px;
+    height: 100px;
 }
 
 #subnav,
 #searchbox {
-  padding-top: 10px;
+    padding-top: 10px;
 }
 #subnav{
-  padding-left: 4px;
+    padding-left: 4px;
 }
 
 
 #organisation_logo {
-  padding-top: 19px;
+    padding-top: 19px;
 }
 
 #main {
-  margin: 0;
+    margin: 0;
 }
 
 #main .page_margins {
-  border-collapse:collapse;
+    border-collapse:collapse;
 }
 #main .page_wrapper {
-  padding: 40px 0 60px;
-  background-color: #fff;
-  float: left;
-  width: 1004px;
+    padding: 40px 0 60px;
+    background-color: #fff;
+    float: left;
+    width: 1004px;
 }
 
 /*Tabs onboarding aboutpage*/
 
 #main .ui-widget {
-  font-family: Arial,sans-serif;
+    font-family: Arial,sans-serif;
 }
 #main .ui-widget input,
 #main .ui-widget button {
-  font-family: Arial,sans-serif;
-  font-size: 13px;
+    font-family: Arial,sans-serif;
+    font-size: 13px;
 }
 /* TODO: This could be much shorter [joka] */
 #main .ui-widget p,
 #main .ui-widget h1,
 #main .ui-widget h2,
 #main .ui-widget h3 {
-  margin-left: 23px;
-  margin-right: 23px;
-  padding-left: 0;
-  padding-right: 0;
-  width: 65%;
+    margin-left: 23px;
+    margin-right: 23px;
+    padding-left: 0;
+    padding-right: 0;
+    width: 65%;
 }
 #main .ui-widget .register {
-  margin-left: 13px;
+    margin-left: 13px;
 }
 #main .ui-widget img {
-  margin-left: 23px;
-  margin-right: 23px;
+    margin-left: 23px;
+    margin-right: 23px;
 }
 #main .ui-widget h1 {
-  margin: 0 23px 27px 23px;
-  padding: 27px 0 0 0;
-  border-bottom: 1px dotted #CCC;
+    margin: 0 23px 27px 23px;
+    padding: 27px 0 0 0;
+    border-bottom: 1px dotted #CCC;
 }
 #tabs-1 {
-  min-height: 714px;
+    min-height: 714px;
 }
 #tab_background_dummy {
-  /*This is only here to show some white background during the tab fading out effect*/
-  background-color:#fff;
-  z-index: 1;
-  position: absolute;
-  top: 50px;
-  width: 1004px;
-  height: 700px;
+    /*This is only here to show some white background during the tab fading out effect*/
+    background-color:#fff;
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    width: 1004px;
+    height: 700px;
 }
 #tabs-1 {
-  /*This is only here to show some white background during the tab fading out effect*/
-  z-index: 2;
+    /*This is only here to show some white background during the tab fading out effect*/
+    z-index: 2;
 }
 
 #main .ui-widget-content,
 #main.with_wordpress_tabs .page_wrapper {
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color:transparent;
-  min-height: 750px;
-  position:relative;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color:transparent;
+    min-height: 750px;
+    position:relative;
 }
 #main.with_wordpress_tabs #col1_content {
-  padding-left: 0;
-  padding-right: 0;
-  /*10px 0 23px;,c */
+    padding-left: 0;
+    padding-right: 0;
+    /*10px 0 23px;,c */
 }
 #main .ui-widget-header {
-  border:none;
-  background-color: transparent;
-  background: url('/static_theme/index_files/white-50.png') repeat bottom center;
-  padding-top: 14px;
+    border:none;
+    background-color: transparent;
+    background: url('/static_theme/index_files/white-50.png') repeat bottom center;
+    padding-top: 14px;
 }
 #tabs-1 > div,
 #tabs-1 h1,
 #main .ui-tabs > div,
 #main .ui-tabs h1 {
-  background-color: #fff;
+    background-color: #fff;
 }
 #main .ui-tabs,
 #main .ui-tabs .ui-tabs-panel {
-  border:none;
-  padding:0;
+    border:none;
+    padding:0;
 }
 #main .ui-tabs-nav {
-  border:none;
-  clear: none;
-  height: 36px;
-  font-weight: bold;
-  font-size: 15px;
-  color: #fff;
-  margin: 0px;
+    border:none;
+    clear: none;
+    height: 36px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    margin: 0px;
 }
 #main .ui-tabs-nav li {
-  height: 36px;
-  line-height: 36px;
-  background: url('/images/sprite_tab_navigation.png') repeat-x 0 -60px;
+    height: 36px;
+    line-height: 36px;
+    background: url('/images/sprite_tab_navigation.png') repeat-x 0 -60px;
 }
 #main .ui-tabs-nav li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 0 19px;
-  display: block;
-  font-weight: bold;
-  font-size: 15px;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 19px;
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
 }
 #main .ui-tabs-nav li.ui-state-active a {
-  color: #2D3441;
+    color: #2D3441;
 }
 #main .ui-tabs-nav li.ui-state-active {
-  background: url('/images/sprite_tab_navigation.png') repeat-x 0 -10px;
+    background: url('/images/sprite_tab_navigation.png') repeat-x 0 -10px;
 }
 #main .ui-tabs-nav li:hover a {
-  color: #fff;
+    color: #fff;
 }
 #main .ui-tabs-nav li:hover {
-  background: url('/images/sprite_tab_navigation.png') repeat-x 0 -111px;
+    background: url('/images/sprite_tab_navigation.png') repeat-x 0 -111px;
 }
 #main .ui-widget-header,
 #main .ui-tabs-nav li {
-  -moz-border-radius-topright: 0;
-  -webkit-border-top-right-radius: 0;
-  -khtml-border-top-right-radius: 0;
-  border-top-right-radius: 0;
-  -moz-border-radius-topleft: 0;
-  -webkit-border-top-left-radius: 0;
-  -khtml-border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  -moz-border-radius-bottomleft: 0;
-  -webkit-border-bottom-left-radius: 0;
-  -khtml-border-bottom-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  -moz-border-radius-bottomright: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -khtml-border-bottom-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border: none;
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    -khtml-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    -khtml-border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -khtml-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -khtml-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: none;
 }
 
 #main .put-nav {
-  display:none;
+    display:none;
 }
 label.armhint {
     display: none;
@@ -275,16 +275,16 @@ label.armhint {
 /*Footer*/
 
 #footer .page_wrapper {
-  background: #445052 url('/static_theme/index_files/footer_hintergrund.gif') top left repeat-x;
-  color: #fff;
-  padding-bottom: 0;
+    background: #445052 url('/static_theme/index_files/footer_hintergrund.gif') top left repeat-x;
+    color: #fff;
+    padding-bottom: 0;
 }
 #second_footer_line,
 #footer_line {
-  background:none;
+    background:none;
 }
 #footer ul {
-  list-style-image: url('/static_theme/index_files/list-item-bar.png');
+    list-style-image: url('/static_theme/index_files/list-item-bar.png');
 }
 #footer, .footer_content h3, .footer_content a {
     color: #fff;
@@ -323,6 +323,6 @@ label.armhint {
 }
 
 #tutorial-banner {
-background-color: white;
-padding: 1px;
+    background-color: white;
+    padding: 1px;
 }
