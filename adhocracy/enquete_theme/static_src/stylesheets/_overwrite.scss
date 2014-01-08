@@ -30,6 +30,7 @@ html.overlay body {
     padding-top: 0;
     margin-bottom: 0;
     max-height: initial;
+    @include box-shadow(none);
 }
 #subheader .page_wrapper {
     background: url('/static_theme/index_files/white-50.png') repeat bottom center;
@@ -57,7 +58,8 @@ html.overlay body {
 
     .page_wrapper {
         background-color: white;
-        padding: 1em 0 3em;
+        padding-top: 1em;
+        padding-bottom: 3em;
     }
 }
 html.overlay #main .page_wrapper {
@@ -71,24 +73,21 @@ html.overlay #main .page_wrapper {
     color: #fff;
     padding-bottom: 1em;
 }
-#second_footer_line,
-#footer_line {
-    background:none;
-}
 #footer ul {
     list-style-image: url('/static_theme/index_files/list-item-bar.png');
 }
-#footer, .footer_content h3, .footer_content a {
-    color: #fff;
-}
-.footer_content a {
-    text-decoration: none;
-}
-.footer_content a:hover {
-    text-decoration: underline;
-}
-.footer_content {
+#footer .page_wrapper > div {
     border: none;
+
+    h3, a {
+        color: #fff;
+    }
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 /* Menu in the right column */
